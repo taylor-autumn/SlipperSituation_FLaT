@@ -152,7 +152,7 @@ MonoBehaviour:
   dead: 0
   iceCube: {fileID: 1309705727}
   meltSpeed: 0.018
-  moveSpeed: 3
+  moveSpeed: 5
 --- !u!54 &754382603
 Rigidbody:
   m_ObjectHideFlags: 0
