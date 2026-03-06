@@ -32,19 +32,19 @@ public class move : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
-                transform.position -= new Vector3(moveSpeed * Time.deltaTime, 0, 0);
+                transform.position += new Vector3(0, 0, moveSpeed * Time.deltaTime);
             }
             if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
-                transform.position += new Vector3(moveSpeed * Time.deltaTime, 0, 0);
+                transform.position -= new Vector3(0, 0, moveSpeed * Time.deltaTime);
             }
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
-                transform.position -= new Vector3(0, 0, moveSpeed * Time.deltaTime);
+                transform.position -= new Vector3(moveSpeed * Time.deltaTime, 0, 0);
             }
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
-                transform.position += new Vector3(0, 0, moveSpeed * Time.deltaTime);
+                transform.position += new Vector3(moveSpeed * Time.deltaTime, 0, 0);
             }
 
         }
