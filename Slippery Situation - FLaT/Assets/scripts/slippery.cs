@@ -86,6 +86,7 @@ public class slippery : MonoBehaviour
         Vector3 sidewaysVel = transform.right * Vector3.Dot(velocity, transform.right);
 
         sidewaysVel *= driftFactor;
+        forwardVel *= driftFactor;
 
         rb.linearVelocity = forwardVel + sidewaysVel + Vector3.up * velocity.y;
     }
