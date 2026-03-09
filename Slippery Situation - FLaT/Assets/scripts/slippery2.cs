@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class slippery1 : MonoBehaviour
+public class slippery2 : MonoBehaviour
 {
  [Header ("melting/taylor/respawn/wearecool")]
     [Header("Player Info")]
