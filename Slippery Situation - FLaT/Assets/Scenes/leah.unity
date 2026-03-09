@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 100167643}
   - component: {fileID: 100167642}
   - component: {fileID: 100167640}
+  - component: {fileID: 100167645}
   - component: {fileID: 100167639}
   m_Layer: 0
   m_Name: Player
@@ -146,7 +147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100167638}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca73ce8aa94454595874c5d9ac12a560, type: 3}
   m_Name: 
@@ -154,8 +155,6 @@ MonoBehaviour:
   moveSpeed: 4.4
   groundDrag: 1.19
   driftFactor: 1.076
-  jumpForce: 4.51
-  jumpCooldown: 4.86
   airMultiplier: 4.98
   walkSpeed: 0
   sprintSpeed: 0
@@ -189,7 +188,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 1
 --- !u!23 &100167642
 MeshRenderer:
@@ -265,6 +264,31 @@ Transform:
   - {fileID: 1998526125}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &100167645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100167638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319dc5d5c782e43f4ba6c4452e938d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::slippery1
+  dead: 0
+  iceCube: {fileID: 100167644}
+  meltSpeed: 0.018
+  moveSpeed: 4.4
+  groundDrag: 1.19
+  driftFactor: 1.076
+  airMultiplier: 4.98
+  walkSpeed: 0
+  sprintSpeed: 0
+  playerHeight: 1
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &319033815
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,13 +533,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618466873}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24107501, y: 0, z: 0, w: 0.9705065}
-  m_LocalPosition: {x: 1.52, y: 8.26, z: -16.07}
+  m_LocalRotation: {x: 0.11441854, y: 0.08197608, z: -0.009474331, w: 0.9899993}
+  m_LocalPosition: {x: -2.83, y: 8.26, z: -28.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 27.9, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.185, y: 9.467, z: 0}
 --- !u!114 &618466877
 MonoBehaviour:
   m_ObjectHideFlags: 0
