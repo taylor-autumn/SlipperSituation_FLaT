@@ -279,9 +279,9 @@ MonoBehaviour:
   dead: 0
   iceCube: {fileID: 100167644}
   meltSpeed: 0.018
-  moveSpeed: 4.4
+  moveSpeed: 4.8
   groundDrag: 1.19
-  driftFactor: 1.076
+  driftFactor: 1.05
   airMultiplier: 4.98
   walkSpeed: 0
   sprintSpeed: 0

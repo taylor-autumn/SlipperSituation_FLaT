@@ -45,6 +45,7 @@ public class slippery1 : MonoBehaviour
         originalTransform = transform.localPosition;
         //both
         rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
     }
 
     private void Update()
