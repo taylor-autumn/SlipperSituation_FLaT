@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class slippery2 : MonoBehaviour
@@ -13,10 +14,8 @@ public class slippery2 : MonoBehaviour
     private Vector3 originalScale;
     private bool melting = true;
 
-    [Header("Movement")]
+    [Header("Movementing")]
     private Vector3 originalTransform;  
-
- [Header("Movement")]
     public float moveSpeed;
     public float groundDrag;
     public float driftFactor = 0.9f;
@@ -30,11 +29,14 @@ public class slippery2 : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     bool grounded;
-
     float horizontalInput;
     float verticalInput;
-
     Vector3 moveDirection;
+
+    [Header("roatating it")]
+    public float rotationSpeed;
+    private Quaternion targetRotation;
+    
 
     //Rigidbody rb;
 
@@ -52,7 +54,7 @@ public class slippery2 : MonoBehaviour
     {
         //movement
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
-        //leah double check this
+        
 
         MyInput();
         SpeedControl();
@@ -62,8 +64,7 @@ public class slippery2 : MonoBehaviour
         else
             rb.linearDamping = 0;
 
-        //melting
-        if (melting) melt();
+
 
         if (dead)
         {
@@ -78,12 +79,38 @@ public class slippery2 : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+        //melting
+        if (melting) melt();
     }
 
     private void MyInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
+        if (!dead)
+        {
+            //movement
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
+
+            //directional change
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                targetRotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                targetRotation = Quaternion.Euler(0f, 90f, 0f);
+            }
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                targetRotation = Quaternion.Euler(0f, -90f, 0f);
+            }
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                targetRotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+        }
     }
 
     private void MovePlayer()
@@ -94,7 +121,7 @@ public class slippery2 : MonoBehaviour
 
         Vector3 targetForce = moveDirection.normalized * moveSpeed * 10f * multiplier;
 
-        rb.AddForce(targetForce, ForceMode.Force); //THIS
+        rb.AddForce(targetForce, ForceMode.Force);
 
         Vector3 velocity = rb.linearVelocity;
         Vector3 forwardVel = transform.forward * Vector3.Dot(velocity, transform.forward);
@@ -103,7 +130,7 @@ public class slippery2 : MonoBehaviour
         sidewaysVel *= driftFactor;
         forwardVel *= driftFactor;
 
-        rb.linearVelocity = forwardVel + sidewaysVel + Vector3.up * velocity.y; //THIS
+        rb.linearVelocity = forwardVel + sidewaysVel + Vector3.up * velocity.y;
     }
 
     private void SpeedControl()
@@ -121,15 +148,14 @@ public class slippery2 : MonoBehaviour
     {
         Vector3 scale = iceCube.transform.localScale;
 
-
         if (scale.y > 0.01f)
         {
             float meltAmount = meltSpeed * Time.deltaTime;
 
-            scale.y-=meltAmount;
+            scale.y -= meltAmount;
             iceCube.transform.localScale = scale;
 
-            transform.position -= new Vector3(0, meltAmount / 2, 0);
+            rb.MovePosition(rb.position - new Vector3(0, meltAmount / 2, 0)); //change tranform position and rigid body were together
         }
         else
         {
