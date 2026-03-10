@@ -1,128 +1,161 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class playerMove : MonoBehaviour
 {
+ [Header ("melting/taylor/respawn/wearecool")]
     [Header("Player Info")]
     public bool dead = false;
     public Transform iceCube;
-    private Vector3 originalScale;
-    private Vector3 originalPosition;
-    itemManager itemRef; //added this
+    Rigidbody rb;
 
     [Header("Melting")]
     public float meltSpeed = 0.018f;
+    private Vector3 originalScale;
     private bool melting = true;
 
-    [Header("Movement")]
-    public float moveSpeed = 4f;
+    [Header("Movementing")]
+    private Vector3 originalTransform;  
+    public float moveSpeed;
     public float groundDrag;
     public float driftFactor = 0.9f;
+
     public float airMultiplier;
+
+    [HideInInspector] public float walkSpeed;
+    [HideInInspector] public float sprintSpeed;
 
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
     bool grounded;
-
     float horizontalInput;
     float verticalInput;
-
     Vector3 moveDirection;
 
-    Rigidbody rb;
+    [Header("roatating it")]
+    public float rotationSpeed;
+    private Quaternion targetRotation;
+    
 
-    void Start()
+    //Rigidbody rb;
+
+    private void Start()
     {
+        //melting
+        originalScale = iceCube.transform.localScale;
+        originalTransform = transform.localPosition;
+        //both
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        itemRef = GetComponent<itemManager>(); //added this
-        originalScale = iceCube.localScale;
-        originalPosition = transform.localPosition;
     }
 
-    void Update()
+    private void Update()
     {
-        grounded = Physics.Raycast(transform.position, Vector3.down,
-            playerHeight * 0.5f + 0.3f, whatIsGround);
+        //movement
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        
 
-        if (!dead)
+        MyInput();
+        SpeedControl();
+
+        if (grounded)
+            rb.linearDamping = groundDrag;
+        else
+            rb.linearDamping = 0;
+
+
+
+        if (dead)
         {
-            MyInput();
-            SpeedControl();
-
-            if (melting) Melt();
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                respawn();
+            }
         }
-
-        if (dead && Input.GetKeyDown(KeyCode.R))
-        {
-            Respawn();
-        }
-
-        if (transform.position.y < -8)
-        {
-            Respawn();
-        }
-
-        rb.linearDamping = grounded ? groundDrag : 0;
+        if (transform.position.y < -8) respawn();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (!dead)
-            MovePlayer();
+        MovePlayer();
+        //melting
+        if (melting) melt();
     }
 
-    void MyInput()
+    private void MyInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
+        if (!dead)
+        {
+            //movement
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
+
+            //directional change
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                targetRotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                targetRotation = Quaternion.Euler(0f, 90f, 0f);
+            }
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                targetRotation = Quaternion.Euler(0f, -90f, 0f);
+            }
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                targetRotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+        }
     }
 
-    void MovePlayer()
+    private void MovePlayer()
     {
-        moveDirection = transform.forward * verticalInput + transform.right * horizontalInput;
+         moveDirection = transform.forward * verticalInput + transform.right * horizontalInput;
 
         float multiplier = grounded ? 1f : airMultiplier;
 
-        if (moveDirection != Vector3.zero)
-        {
-            Vector3 targetForce = moveDirection.normalized * moveSpeed * 10f * multiplier;
-            rb.AddForce(targetForce, ForceMode.Force);
-        }
+        Vector3 targetForce = moveDirection.normalized * moveSpeed * 10f * multiplier;
+
+        rb.AddForce(targetForce, ForceMode.Force);
 
         Vector3 velocity = rb.linearVelocity;
-
         Vector3 forwardVel = transform.forward * Vector3.Dot(velocity, transform.forward);
         Vector3 sidewaysVel = transform.right * Vector3.Dot(velocity, transform.right);
 
         sidewaysVel *= driftFactor;
+        forwardVel *= driftFactor;
 
         rb.linearVelocity = forwardVel + sidewaysVel + Vector3.up * velocity.y;
     }
 
-    void SpeedControl()
+    private void SpeedControl()
     {
         Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
-        if (flatVel.magnitude > moveSpeed)
+        if(flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
     }
 
-    void Melt()
+    public void melt()
     {
-        Vector3 scale = iceCube.localScale;
+        Vector3 scale = iceCube.transform.localScale;
 
         if (scale.y > 0.01f)
         {
             float meltAmount = meltSpeed * Time.deltaTime;
 
             scale.y -= meltAmount;
-            iceCube.localScale = scale;
+            iceCube.transform.localScale = scale;
 
-            transform.position -= new Vector3(0, meltAmount / 2, 0);
+            rb.MovePosition(rb.position - new Vector3(0, meltAmount / 2, 0)); //change tranform position and rigid body were together
         }
         else
         {
@@ -130,10 +163,10 @@ public class playerMove : MonoBehaviour
         }
     }
 
-    void Respawn()
+     public void respawn()
     {
-        itemRef.Respawn(); //added this
-        iceCube.localScale = originalScale;
+        transform.localPosition = originalTransform;
+        iceCube.transform.localScale = originalScale;
 
         transform.rotation = Quaternion.identity;
 
@@ -141,5 +174,7 @@ public class playerMove : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
 
         dead = false;
+        print("resetting");
     }
+
 }
