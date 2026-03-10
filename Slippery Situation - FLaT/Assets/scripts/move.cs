@@ -112,4 +112,6 @@ public class move : MonoBehaviour
         dead = false;
         print("resetting");
     }
+
+
 }

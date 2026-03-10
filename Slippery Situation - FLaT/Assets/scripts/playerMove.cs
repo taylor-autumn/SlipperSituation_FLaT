@@ -7,6 +7,7 @@ public class playerMove : MonoBehaviour
     public Transform iceCube;
     private Vector3 originalScale;
     private Vector3 originalPosition;
+    itemManager itemRef; //added this
 
     [Header("Melting")]
     public float meltSpeed = 0.018f;
@@ -34,7 +35,7 @@ public class playerMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-
+        itemRef = GetComponent<itemManager>(); //added this
         originalScale = iceCube.localScale;
         originalPosition = transform.localPosition;
     }
@@ -131,7 +132,7 @@ public class playerMove : MonoBehaviour
 
     void Respawn()
     {
-        transform.localPosition = originalPosition;
+        itemRef.Respawn(); //added this
         iceCube.localScale = originalScale;
 
         transform.rotation = Quaternion.identity;
