@@ -32,6 +32,7 @@ public class itemManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("freezingPoint"))
         {
+            print("changed freezping point");
             currentRespawnTransform=other.transform;
         }
     }
