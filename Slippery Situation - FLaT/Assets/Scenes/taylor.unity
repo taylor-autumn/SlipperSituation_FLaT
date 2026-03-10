@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 754382604}
   - component: {fileID: 754382603}
-  - component: {fileID: 754382602}
   - component: {fileID: 754382606}
   - component: {fileID: 754382605}
   m_Layer: 0
@@ -139,22 +138,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &754382602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754382601}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bebe3bb1469e3754b815e1c4d00b4e35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::move
-  dead: 0
-  iceCube: {fileID: 1309705727}
-  meltSpeed: 0.0185
-  moveSpeed: 5
 --- !u!54 &754382603
 Rigidbody:
   m_ObjectHideFlags: 0
