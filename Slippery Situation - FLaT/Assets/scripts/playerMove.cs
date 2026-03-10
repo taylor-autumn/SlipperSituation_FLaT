@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class playerMove : MonoBehaviour
 {
- [Header ("melting/taylor/respawn/wearecool")]
     [Header("Player Info")]
     public bool dead = false;
     public Transform iceCube;
     Rigidbody rb;
+    itemManager itemRef;
 
     [Header("Melting")]
     public float meltSpeed = 0.018f;
@@ -36,12 +36,11 @@ public class playerMove : MonoBehaviour
     [Header("roatating it")]
     public float rotationSpeed;
     private Quaternion targetRotation;
-    
-
-    //Rigidbody rb;
 
     private void Start()
     {
+        //itemManagerReference
+        itemRef=GetComponent<itemManager>();
         //melting
         originalScale = iceCube.transform.localScale;
         originalTransform = transform.localPosition;
@@ -54,7 +53,6 @@ public class playerMove : MonoBehaviour
     {
         //movement
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
-        
 
         MyInput();
         SpeedControl();
@@ -64,8 +62,7 @@ public class playerMove : MonoBehaviour
         else
             rb.linearDamping = 0;
 
-
-
+        //respawn shit
         if (dead)
         {
             if (Input.GetKeyDown(KeyCode.R))
@@ -165,7 +162,7 @@ public class playerMove : MonoBehaviour
 
      public void respawn()
     {
-        transform.localPosition = originalTransform;
+        itemRef.respawn(gameObject);
         iceCube.transform.localScale = originalScale;
 
         transform.rotation = Quaternion.identity;

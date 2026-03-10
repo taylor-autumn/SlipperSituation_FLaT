@@ -14,7 +14,6 @@ public class itemManager : MonoBehaviour
     {
         player=GetComponent<GameObject>();
         playerRef=GetComponent<move>();
-        
     }
 
     // Update is called once per frame
@@ -23,18 +22,16 @@ public class itemManager : MonoBehaviour
         
     }
 
-    public void Respawn()
+    public void respawn(GameObject player)
     {
-        print("changing respawn");
+        print("called respawn");
         player.transform.position = currentRespawnTransform.position; //this no work
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("freezingPoint"))
         {
-            Respawn();
             currentRespawnTransform=other.transform;
         }
     }
