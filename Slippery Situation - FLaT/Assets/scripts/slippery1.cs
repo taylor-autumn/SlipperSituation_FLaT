@@ -13,14 +13,11 @@ public class slippery1 : MonoBehaviour
     private Vector3 originalScale;
     private bool melting = true;
 
-    [Header("Movement")]
+    [Header("Taylor Movement")]
     private Vector3 originalTransform;  
-
- [Header("Movement")]
     public float moveSpeed;
     public float groundDrag;
     public float driftFactor = 0.9f;
-
     public float airMultiplier;
 
     [HideInInspector] public float walkSpeed;
@@ -30,13 +27,9 @@ public class slippery1 : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     bool grounded;
-
     float horizontalInput;
     float verticalInput;
-
     Vector3 moveDirection;
-
-    //Rigidbody rb;
 
     private void Start()
     {
