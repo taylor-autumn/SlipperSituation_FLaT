@@ -130,9 +130,8 @@ GameObject:
   - component: {fileID: 100167644}
   - component: {fileID: 100167643}
   - component: {fileID: 100167642}
-  - component: {fileID: 100167640}
   - component: {fileID: 100167645}
-  - component: {fileID: 100167639}
+  - component: {fileID: 100167640}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -140,29 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &100167639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100167638}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca73ce8aa94454595874c5d9ac12a560, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::slippery
-  moveSpeed: 4.4
-  groundDrag: 1.19
-  driftFactor: 1.076
-  airMultiplier: 4.98
-  walkSpeed: 0
-  sprintSpeed: 0
-  jumpKey: 32
-  playerHeight: 1
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!54 &100167640
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -188,7 +164,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 32
+  m_Constraints: 0
   m_CollisionDetection: 1
 --- !u!23 &100167642
 MeshRenderer:
@@ -260,7 +236,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 319033816}
   - {fileID: 1998526125}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -273,15 +248,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 100167638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 319dc5d5c782e43f4ba6c4452e938d16, type: 3}
+  m_Script: {fileID: 11500000, guid: 7126d4eaf7b4e4ebdb022e7a02d07d15, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::slippery1
+  m_EditorClassIdentifier: Assembly-CSharp::slippery2
   dead: 0
   iceCube: {fileID: 100167644}
   meltSpeed: 0.018
   moveSpeed: 4.8
   groundDrag: 1.19
-  driftFactor: 1.05
+  driftFactor: 1.0599
   airMultiplier: 4.98
   walkSpeed: 0
   sprintSpeed: 0
@@ -289,37 +264,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
---- !u!1 &319033815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 319033816}
-  m_Layer: 0
-  m_Name: orientation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &319033816
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319033815}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 100167644}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  rotationSpeed: 5
 --- !u!1 &617207386
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,13 +478,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618466873}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11441854, y: 0.08197608, z: -0.009474331, w: 0.9899993}
-  m_LocalPosition: {x: -2.83, y: 8.26, z: -28.78}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.23241007, y: 0.00896331, z: 0.0020858338, w: 0.9725744}
+  m_LocalPosition: {x: -0.17999989, y: 16.25, z: -28.78}
+  m_LocalScale: {x: 1, y: 1, z: 0.0009912245}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 13.185, y: 9.467, z: 0}
+  m_LocalEulerAnglesHint: {x: 26.874, y: 1.182, z: 0.528}
 --- !u!114 &618466877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,8 +922,8 @@ BoxCollider:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 618466876}
   - {fileID: 617207388}
+  - {fileID: 618466876}
   - {fileID: 100167644}
   - {fileID: 1555804288}
   - {fileID: 1778396844}
