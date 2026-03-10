@@ -4,7 +4,7 @@ public class itemManager : MonoBehaviour
 {
     [Header("General")]
     GameObject player;
-    playerMove playerRef;
+    move playerRef;
 
     [Header("Respawn")]
     Transform currentRespawnTransform;
@@ -13,7 +13,7 @@ public class itemManager : MonoBehaviour
     void Start()
     {
         player=GetComponent<GameObject>();
-        playerRef=GetComponent<playerMove>();
+        playerRef=GetComponent<move>();
         
     }
 

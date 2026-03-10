@@ -19,8 +19,9 @@ public class billBoard : MonoBehaviour
         {
             // transform.LookAt(mainCamera.transform.position);
             // transform.Rotate(90, 0, 0); 
-            Vector3 camPosition = new Vector3(0,camObj.transform.position.y+180,0);
+            Vector3 camPosition = new Vector3(0,camObj.transform.position.y,0);
             transform.forward = camPosition;
+            transform.Rotate(0, 180, 0); 
             //transform.Rotate(0,camObj.transform.position.y, 0);
         }
     }
