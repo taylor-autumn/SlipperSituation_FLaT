@@ -171,7 +171,6 @@ public class playerMove : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
 
         dead = false;
-        print("resetting");
     }
 
 }

@@ -3,17 +3,17 @@ using UnityEngine;
 public class itemManager : MonoBehaviour
 {
     [Header("General")]
-    GameObject player;
     move playerRef;
 
     [Header("Respawn")]
-    Transform currentRespawnTransform;
+    public Transform firstFreezingPoint;
+    public Transform currentRespawnTransform;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player=GetComponent<GameObject>();
         playerRef=GetComponent<move>();
+        currentRespawnTransform=firstFreezingPoint;
     }
 
     // Update is called once per frame
@@ -24,16 +24,18 @@ public class itemManager : MonoBehaviour
 
     public void respawn(GameObject player)
     {
-        print("called respawn");
-        player.transform.position = currentRespawnTransform.position; //this no work
+        player.transform.position = currentRespawnTransform.position;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("freezingPoint"))
         {
-            print("changed freezping point");
-            currentRespawnTransform=other.transform;
+            if (currentRespawnTransform != other.transform)
+            {
+                print("new respawn");
+                currentRespawnTransform = other.transform;
+            }
         }
     }
 }
