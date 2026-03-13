@@ -68,14 +68,19 @@ public class playerMove : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.R))
             {
                 respawn();
+                resetMoveableObjects();
+                //change this to reset to the very FIRST level respawn
             }
         }
-        if (transform.position.y < -8) respawn();
+        if (transform.position.y < -8)
+        {
+            respawn();
+        }
     }
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        if (!dead) MovePlayer();
         //melting
         if (melting) melt();
     }
@@ -163,7 +168,7 @@ public class playerMove : MonoBehaviour
      public void respawn()
     {
         itemRef.respawn(gameObject);
-        iceCube.transform.localScale = originalScale;
+        resetScale();
 
         transform.rotation = Quaternion.identity;
 
@@ -171,6 +176,22 @@ public class playerMove : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
 
         dead = false;
+    }
+
+    public void resetScale()
+    {
+        iceCube.transform.localScale = originalScale;
+    }
+
+    public void resetMoveableObjects()
+    {
+        GameObject movObjParent = GameObject.Find("moveableObjects");
+        foreach (Transform obj in movObjParent.transform)
+        {
+            moveableObjects objScript = obj.GetComponent<moveableObjects>();
+            objScript.respawnObj();
+        }
+
     }
 
 }

@@ -13,31 +13,42 @@ public class moveableObjects : MonoBehaviour
     public GameObject obj1;
     public GameObject obj2;
     public GameObject targetPlatform;
+    public GameObject signalObj;
     public Material transparentMaterial;
     public Material filledMaterial;
+
+    //other components
     BoxCollider obj1Col;
     BoxCollider obj2Col;
     Renderer obj1Renderer;
     Renderer obj2Renderer;
+    Renderer signalRenderer;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         rb=GetComponent<Rigidbody>();
         ogObjPos = transform.position;
 
         //platform stuff
-        obj1Col=obj1.GetComponent<BoxCollider>();
-        obj2Col=obj2.GetComponent<BoxCollider>();
-        obj1Renderer = obj1.GetComponent<Renderer>();
-        obj2Renderer = obj2.GetComponent<Renderer>();
+        if (obj1 != null)
+        {
+            obj1Col = obj1.GetComponent<BoxCollider>();
+            obj1Renderer = obj1.GetComponent<Renderer>();
+        }
+        if (obj2 != null)
+        {
+            obj2Col = obj2.GetComponent<BoxCollider>();
+            obj2Renderer = obj2.GetComponent<Renderer>();
+        }
+        signalRenderer= signalObj.GetComponent<Renderer>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (gameObject.transform.position.y <= deathHeight)
         {
             respawnObj();
@@ -56,29 +67,40 @@ public class moveableObjects : MonoBehaviour
 
     public void activatePlatform()
     {
-        print("enabled");
 
-        obj1Col.enabled = true;
-        obj2Col.enabled = false;
+        if (obj1 != null)
+        {
+            obj1Col.enabled = true;
+            obj1Renderer.material = filledMaterial;
+        }
+        if (obj2 != null)
+        {
+            obj2Col.enabled = false;
+            obj2Renderer.material = transparentMaterial;
+        }
 
-        obj1Renderer.material = filledMaterial;
-        obj2Renderer.material = transparentMaterial;
+        signalRenderer.material = filledMaterial;
 
     }
 
     public void resetPlatform()
     {
-        print("disabled");
-        obj1Col.enabled = false;
-        obj2Col.enabled = true;
-
-        obj1Renderer.material = transparentMaterial;
-        obj2Renderer.material = filledMaterial;
+        if (obj1 != null)
+        {
+            obj1Col.enabled = false;
+            obj1Renderer.material = transparentMaterial;
+        }
+        if (obj2!=null)
+        {
+            obj2Col.enabled = true;
+            obj2Renderer.material = filledMaterial;
+        }
+        signalRenderer.material = transparentMaterial;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("platform"))
+        if (other.gameObject==targetPlatform.gameObject)
         {
             activatePlatform();
         }
@@ -86,7 +108,7 @@ public class moveableObjects : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("platform"))
+        if (other.gameObject == targetPlatform.gameObject)
         {
             resetPlatform();
         }

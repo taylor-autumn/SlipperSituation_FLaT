@@ -3,7 +3,7 @@ using UnityEngine;
 public class itemManager : MonoBehaviour
 {
     [Header("General")]
-    move playerRef;
+    playerMove playerRef;
 
     [Header("Respawn")]
     public Transform firstFreezingPoint;
@@ -12,7 +12,7 @@ public class itemManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        playerRef=GetComponent<move>();
+        playerRef=GetComponent<playerMove>();
         currentRespawnTransform=firstFreezingPoint;
     }
 
@@ -35,6 +35,7 @@ public class itemManager : MonoBehaviour
             {
                 print("new respawn");
                 currentRespawnTransform = other.transform;
+                playerRef.resetScale();
             }
         }
     }
