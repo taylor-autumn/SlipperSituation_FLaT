@@ -4,29 +4,33 @@ using System.Collections;
 
 public class activatingScript : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
+    public GameObject textIcon;
+    public TextMeshPro textComponent;
     public string[] lines;
-    public int finalLine;
+    public int secondPart;
     public float textSpeed;
     private int index;
+    private playerMove playerMoveScript;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //reference the player controller and disable it
-            
-            Invoke("dialingit", .5f);
+            playerMoveScript = GameObject.Find("Player").GetComponent<playerMove>();
+            playerMoveScript.enabled = false;
+            Invoke("dialingit", 0.5f);
         }
     }
     void StartDialougue()
     {
-        index = 0;
+        //index = 0;
+        print("start");
         StartCoroutine(TypeLine());
     }
 
-    void Start(){
-
+    void dialingit(){
+        print("dialed");
+        textIcon.SetActive(true);
         textComponent.text = string.Empty;
         StartDialougue();
     }
@@ -38,6 +42,11 @@ public class activatingScript : MonoBehaviour
             if (textComponent.text == lines[index])
             {
                 NextLine();
+                if (index > secondPart - 1)
+                {
+                textIcon.SetActive(false);
+                playerMoveScript.enabled = true;
+                }
             }
             else
             {
@@ -57,7 +66,7 @@ public class activatingScript : MonoBehaviour
     }
     void NextLine()
     {
-        if (index < finalLine - 1)
+        if (index < secondPart - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -65,7 +74,15 @@ public class activatingScript : MonoBehaviour
         }
         else
         {
-          index = Random.Range(finalLine, lines.Length);
+            index++;
+            textIcon.SetActive(false);
+            playerMoveScript.enabled = true;
+        }
+        if (index > secondPart - 1)
+        {
+            textComponent.text = string.Empty;
+            index = Random.Range(secondPart, lines.Length);
+            StartCoroutine(TypeLine());
         }
     }
 }
