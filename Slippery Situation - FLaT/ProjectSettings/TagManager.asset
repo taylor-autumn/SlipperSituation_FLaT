@@ -8,6 +8,10 @@ TagManager:
   - freezingPoint
   - NPC
   - platform
+  - goUp
+  - mud
+  - soap
+  - blower
   layers:
   - Default
   - TransparentFX

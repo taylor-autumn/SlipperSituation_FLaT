@@ -46,7 +46,7 @@ public class playerMove : MonoBehaviour
         originalTransform = transform.localPosition;
         //both
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+        //rb.freezeRotation = true;
     }
 
     private void Update()
