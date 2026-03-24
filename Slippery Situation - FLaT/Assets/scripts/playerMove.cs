@@ -67,9 +67,9 @@ public class playerMove : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
+                itemRef.currentRespawnTransform = itemRef.firstFreezingPoint;
                 respawn();
                 resetMoveableObjects();
-                //change this to reset to the very FIRST level respawn
             }
         }
         if (transform.position.y < -8)
