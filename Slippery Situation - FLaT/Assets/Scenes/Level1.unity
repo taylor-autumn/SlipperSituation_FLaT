@@ -4092,7 +4092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 22aa5ef12e505694dad44425e2d69ec1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.188243
+      value: 6.112269
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 22aa5ef12e505694dad44425e2d69ec1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4104,7 +4104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 22aa5ef12e505694dad44425e2d69ec1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.311
+      value: 45.32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 22aa5ef12e505694dad44425e2d69ec1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4268,6 +4268,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::itemManager
   firstFreezingPoint: {fileID: 0}
   currentRespawnTransform: {fileID: 0}
+  ogDrag: 0
+  currentDrag: 10
+  ogMelt: 0
+  currentMelt: 0.05
+  deathMelt: 0.5
 --- !u!114 &638334825
 MonoBehaviour:
   m_ObjectHideFlags: 0
