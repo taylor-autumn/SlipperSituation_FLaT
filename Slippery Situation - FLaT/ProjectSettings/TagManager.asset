@@ -12,6 +12,9 @@ TagManager:
   - mud
   - soap
   - blower
+  - sunSpot
+  - towel
+  - stove
   layers:
   - Default
   - TransparentFX
