@@ -16,6 +16,7 @@ public class moveableObjects : MonoBehaviour
     public GameObject signalObj;
     public Material transparentMaterial;
     public Material filledMaterial;
+    public Material onMaterial;
 
     //other components
     BoxCollider obj1Col;
@@ -23,7 +24,7 @@ public class moveableObjects : MonoBehaviour
     Renderer obj1Renderer;
     Renderer obj2Renderer;
     Renderer signalRenderer;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -79,7 +80,7 @@ public class moveableObjects : MonoBehaviour
             obj2Renderer.material = transparentMaterial;
         }
 
-        signalRenderer.material = filledMaterial;
+        signalRenderer.material = onMaterial;
 
     }
 
@@ -100,17 +101,26 @@ public class moveableObjects : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject==targetPlatform.gameObject)
+        if (gameObject.tag=="moveObj" && other.gameObject==targetPlatform.gameObject)
         {
             activatePlatform();
+        }
+        if ((gameObject.tag==("mentos")) && (other.gameObject.CompareTag("can")))
+        {
+            print("Thing in can");
+            //item ref
+            GameObject player = GameObject.Find("Player");
+            itemManager itemRef = player.GetComponent<itemManager>();
+            itemRef.mentosCounter += 1;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == targetPlatform.gameObject)
+        if (gameObject.tag == "moveObj" && other.gameObject == targetPlatform.gameObject)
         {
             resetPlatform();
         }
     }
+
 }

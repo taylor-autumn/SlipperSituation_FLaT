@@ -15,6 +15,9 @@ TagManager:
   - sunSpot
   - towel
   - stove
+  - can
+  - mentos
+  - moveObj
   layers:
   - Default
   - TransparentFX

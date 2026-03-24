@@ -67,8 +67,7 @@ public class playerMove : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
-                itemRef.currentRespawnTransform = itemRef.firstFreezingPoint;
-                respawn();
+                ultraRespawn();
                 resetMoveableObjects();
             }
         }
@@ -168,6 +167,20 @@ public class playerMove : MonoBehaviour
      public void respawn()
     {
         itemRef.respawn(gameObject);
+        resetScale();
+
+        transform.rotation = Quaternion.identity;
+
+        rb.linearVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        dead = false;
+    }
+
+    public void ultraRespawn()
+    {
+        print("ultra respawning");
+        itemRef.ultraRespawn(gameObject);
         resetScale();
 
         transform.rotation = Quaternion.identity;
