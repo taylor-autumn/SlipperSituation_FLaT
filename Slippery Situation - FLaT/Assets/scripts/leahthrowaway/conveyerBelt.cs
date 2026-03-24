@@ -9,6 +9,7 @@ public class conveyerBelt : MonoBehaviour
     private Vector3 direction;
     [SerializeField]
     private List<GameObject> onBelt;
+    public GameObject playerGuy;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,7 @@ public class conveyerBelt : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-           onBelt.Add(other.gameObject);
+            onBelt.Add(playerGuy);
         }
     }
 
@@ -42,7 +43,7 @@ public class conveyerBelt : MonoBehaviour
     { 
         if (other.gameObject.CompareTag("Player"))
         {
-           onBelt.Remove(other.gameObject);
+           onBelt.Remove(playerGuy);
         }
     }
 }
