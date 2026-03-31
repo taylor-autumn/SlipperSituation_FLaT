@@ -28,6 +28,7 @@ public class itemManager : MonoBehaviour
     [Header("Soda Bubbles")]
     public int mentosCounter = 0;
     public ParticleSystem bubbles;
+
     [Header("Muddy")]
     public Material myMaterial;
     Color normColor = new Color(0.4816661f, 0.7283878f, 0.8301887f, 0.6509804f);
@@ -36,6 +37,11 @@ public class itemManager : MonoBehaviour
     public GameObject soapParticles;
     private bool dirty = false;
     private bool cleanering = false;
+
+    [Header("Fan")]
+    public Transform fan;
+    public float fanSpeed;
+    public Vector3 fanRotationAxis = Vector3.up;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -54,6 +60,8 @@ public class itemManager : MonoBehaviour
     void Update()
     {
         manageBubbles();
+
+        fan.transform.RotateAround(fan.position, fanRotationAxis, fanSpeed * Time.deltaTime);
 
         //muddyying
         if (dirty)
