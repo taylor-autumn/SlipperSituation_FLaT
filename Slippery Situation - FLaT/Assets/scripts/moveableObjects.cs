@@ -59,6 +59,10 @@ public class moveableObjects : MonoBehaviour
     public void respawnObj()
     {
         gameObject.transform.position = ogObjPos;
+        if (ogObjPos == null)
+        {
+            print("ITS NULL");
+        }
 
         transform.rotation = Quaternion.identity;
 

@@ -2412,7 +2412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &526724071
 Transform:
   m_ObjectHideFlags: 0
@@ -14832,7 +14832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::conveyerBelt
   speed: 15
-  direction: {x: 0, y: 1.5, z: 0}
+  direction: {x: 0, y: 1.82, z: 0}
   onBelt: []
   playerGuy: {fileID: 1341473967}
 --- !u!65 &1103736225
