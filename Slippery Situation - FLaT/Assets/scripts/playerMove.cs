@@ -1,5 +1,8 @@
+using TMPro;
+using Unity.VectorGraphics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class playerMove : MonoBehaviour
@@ -7,12 +10,18 @@ public class playerMove : MonoBehaviour
     [Header("Camera")]
     public Transform cameraFollow;
     private Vector3 camOffset;
+
     [Header("Player Info")]
     public bool dead = false;
-    public Image meltBar;
     public Transform iceCube;
     Rigidbody rb;
     itemManager itemRef;
+    public float deathHeight = -8;
+
+    [Header("UI SHIT")]
+    public Image meltBar;
+    public TMP_Text deadText;
+    public GameObject deathPopUp;
 
     [Header("Melting")]
     public float meltSpeed = 0.018f;
@@ -42,6 +51,14 @@ public class playerMove : MonoBehaviour
     public float rotationSpeed;
     private Quaternion targetRotation;
 
+    //enum shit
+    public enum gameMode
+    {
+        game,
+        menu
+    }
+    public gameMode currentMode;
+
     private void Start()
     {
         //itemManagerReference
@@ -54,6 +71,9 @@ public class playerMove : MonoBehaviour
         rb.freezeRotation = true;
         //camerassutf
         camOffset = cameraFollow.position - transform.position;
+        //other
+        deadText.gameObject.SetActive(false);
+        deathPopUp.SetActive(false);
     }
 
     private void Update()
@@ -78,13 +98,17 @@ public class playerMove : MonoBehaviour
         //respawn shit
         if (dead)
         {
+            deadText.gameObject.SetActive(true);
+            deathPopUp.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R))
             {
                 ultraRespawn();
                 resetMoveableObjects();
+                deadText.gameObject.SetActive(false);
+                deathPopUp.SetActive(false);
             }
         }
-        if (transform.position.y < -8)
+        if (transform.position.y < deathHeight)
         {
             respawn();
         }
@@ -92,9 +116,9 @@ public class playerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!dead) MovePlayer();
+        if (!dead && currentMode==gameMode.game) MovePlayer();
         //melting
-        if (melting) melt();
+        if (melting && currentMode == gameMode.game) melt();
     }
 
     private void MyInput()
@@ -224,6 +248,27 @@ public class playerMove : MonoBehaviour
             objScript.respawnObj();
         }
 
+    }
+
+    //==============IN GAME MENU SHIT================//
+    public void mainMenuGo()
+    {
+        SceneManager.LoadScene("menu");
+    }
+    public void restartLevel()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void enterMenu()
+    {
+        currentMode = gameMode.menu;
+    }
+
+    public void exitMenu()
+    {
+        currentMode = gameMode.game;
     }
 
 }
