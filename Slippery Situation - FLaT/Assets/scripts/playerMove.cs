@@ -1,10 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerMove : MonoBehaviour
 {
+    [Header("Camera")]
+    public Transform cameraFollow;
+    private Vector3 camOffset;
     [Header("Player Info")]
     public bool dead = false;
+    public Image meltBar;
     public Transform iceCube;
     Rigidbody rb;
     itemManager itemRef;
@@ -47,6 +52,8 @@ public class playerMove : MonoBehaviour
         //both
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        //camerassutf
+        camOffset = cameraFollow.position - transform.position;
     }
 
     private void Update()
@@ -57,10 +64,16 @@ public class playerMove : MonoBehaviour
         MyInput();
         SpeedControl();
 
-        if (grounded)
-            rb.linearDamping = groundDrag;
-        else
-            rb.linearDamping = 0;
+            if (grounded)
+                {
+                    rb.linearDamping = groundDrag;
+                }
+            else
+                {
+                    rb.linearDamping = 0;
+                }
+        //Camera
+        cameraFollow.position = transform.position + camOffset;
 
         //respawn shit
         if (dead)
@@ -147,7 +160,13 @@ public class playerMove : MonoBehaviour
 
     public void melt()
     {
+        //melthing continuous
         Vector3 scale = iceCube.transform.localScale;
+
+        //health bar
+        meltBar.fillAmount = scale.y;
+
+        //melt function
 
         if (scale.y > 0.01f)
         {

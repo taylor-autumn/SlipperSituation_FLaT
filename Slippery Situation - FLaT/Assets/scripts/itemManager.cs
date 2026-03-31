@@ -28,6 +28,14 @@ public class itemManager : MonoBehaviour
     [Header("Soda Bubbles")]
     public int mentosCounter = 0;
     public ParticleSystem bubbles;
+    [Header("Muddy")]
+    public Material myMaterial;
+    Color normColor = new Color(0.4816661f, 0.7283878f, 0.8301887f, 0.6509804f);
+    Color mudColor = new Color(0.3490566f, 0.1512773f, 0f, 0.6509804f);
+    public float changering = 0;
+    public GameObject soapParticles;
+    private bool dirty = false;
+    private bool cleanering = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,12 +44,36 @@ public class itemManager : MonoBehaviour
         currentRespawnTransform=firstFreezingPoint;
         ogDrag=playerRef.groundDrag;
         ogMelt=playerRef.meltSpeed;
+
+        //muddy
+        soapParticles.SetActive(false);
+        myMaterial.color = normColor;
     }
 
     // Update is called once per frame
     void Update()
     {
         manageBubbles();
+
+        //muddyying
+        if (dirty)
+        {
+            if (changering < 1)
+                {
+                    changering += 0.0008f;
+                }
+            Color lerpingit = Color.Lerp(normColor, mudColor, changering);
+            myMaterial.color = lerpingit;
+        }
+        if (cleanering)
+        {
+            if (changering > 0)
+                {
+                    changering -= 0.0008f;
+                }
+            Color lerpingit = Color.Lerp(normColor, mudColor, changering);
+            myMaterial.color = lerpingit;
+        }
     }
 
     public void respawn(GameObject player)
@@ -83,6 +115,18 @@ public class itemManager : MonoBehaviour
         }
         
         if (other.gameObject.CompareTag("towel")) playerRef.groundDrag=currentDrag + 5; //towel
+
+        //muddy
+        if (other.gameObject.CompareTag("mud"))
+        {
+            dirty = true;
+        }
+
+          if (other.gameObject.CompareTag("soap"))
+        {
+            cleanering = true;
+            soapParticles.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -100,6 +144,16 @@ public class itemManager : MonoBehaviour
                 playerRef.groundDrag = ogDrag;
                 playerRef.meltSpeed = ogMelt;
             }
+        }
+        if (other.gameObject.CompareTag("mud"))
+        {
+            dirty = false;
+        }
+
+          if (other.gameObject.CompareTag("soap"))
+        {
+            cleanering = false;
+            soapParticles.SetActive(false);
         }
     }
 

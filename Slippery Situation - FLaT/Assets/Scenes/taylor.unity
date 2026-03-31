@@ -6440,7 +6440,7 @@ Transform:
   m_GameObject: {fileID: 754382601}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.55, y: 0.57, z: 23.07}
+  m_LocalPosition: {x: 7, y: 0.57, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6483,7 +6483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7126d4eaf7b4e4ebdb022e7a02d07d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::slippery2
+  cameraFollow: {fileID: 0}
   dead: 0
+  meltBar: {fileID: 0}
   iceCube: {fileID: 1309705727}
   meltSpeed: 0.018
   moveSpeed: 4.8

@@ -11,11 +11,16 @@ public class activatingScript : MonoBehaviour
     public float textSpeed;
     private int index;
     private playerMove playerMoveScript;
+    public bool talkingToggle;
 
+    void Start()
+    {
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            talkingToggle = true;
             playerMoveScript = GameObject.Find("Player").GetComponent<playerMove>();
             playerMoveScript.enabled = false;
             Invoke("dialingit", 0.5f);
@@ -39,20 +44,20 @@ public class activatingScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (textComponent.text == lines[index])
-            {
-                NextLine();
-                if (index > secondPart - 1)
+                if (talkingToggle == true && textComponent.text == lines[index])
                 {
-                textIcon.SetActive(false);
-                playerMoveScript.enabled = true;
+                    NextLine();
+                    if (index > secondPart - 1)
+                    {
+                        textIcon.SetActive(false);
+                        playerMoveScript.enabled = true;
+                    }
                 }
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-            }
+                else
+                {
+                    StopAllCoroutines();
+                    textComponent.text = lines[index];
+                }
         }
     }
 
@@ -77,6 +82,7 @@ public class activatingScript : MonoBehaviour
             index++;
             textIcon.SetActive(false);
             playerMoveScript.enabled = true;
+            talkingToggle = false;
         }
         if (index > secondPart - 1)
         {
