@@ -217,7 +217,7 @@ public class playerMove : MonoBehaviour
 
     public void resetMoveableObjects()
     {
-        GameObject movObjParent = GameObject.Find("moveableObjects");
+        GameObject movObjParent = GameObject.Find("moveObjs");
         foreach (Transform obj in movObjParent.transform)
         {
             moveableObjects objScript = obj.GetComponent<moveableObjects>();
