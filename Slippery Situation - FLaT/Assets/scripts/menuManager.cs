@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menuManager : MonoBehaviour
 {
@@ -12,19 +13,13 @@ public class menuManager : MonoBehaviour
     [Header("warning page")]
     public GameObject warningPage;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Equals))
+        {
+            saveSystem.resetSave("taylor n leah");
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     public void openAbout()
     {
         titleText.text = "About Page";
@@ -35,5 +30,29 @@ public class menuManager : MonoBehaviour
     {
         titleText.text = "Credits Page";
         wordText.text = "insert credits description here";
+    }
+
+    public void loadSavedScene()
+    {
+        sceneData data = saveSystem.loadScene();
+        if (data != null && data.currentScene!="taylor n leah")
+        {
+            SceneManager.LoadScene(data.currentScene);
+        }else if (data.currentScene=="taylor n leah")
+        {
+            print("its the normal one");
+        }
+        else if (data==null)
+        {
+            print("its null");
+        }
+    }
+
+    public void newGame()
+    {
+        //saveSystem.resetSave("Level1");
+        saveSystem.resetSave("taylor n leah");
+        //SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("taylor n leah");
     }
 }

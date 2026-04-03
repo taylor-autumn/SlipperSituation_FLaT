@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class itemManager : MonoBehaviour
 {
@@ -191,6 +192,12 @@ public class itemManager : MonoBehaviour
             print("IT IS 3");
             main.simulationSpeed = 1f;
             emission.rateOverTime = 50;
+            Invoke("loadLevel2", 3f);
         }
     }
+    public void loadLevel2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+
 }
