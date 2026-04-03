@@ -40,7 +40,7 @@ public class menuManager : MonoBehaviour
             SceneManager.LoadScene(data.currentScene);
         }else if (data.currentScene=="taylor n leah")
         {
-            print("its the normal one");
+            print("its the first one");
         }
         else if (data==null)
         {

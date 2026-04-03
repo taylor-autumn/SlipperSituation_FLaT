@@ -5,6 +5,9 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
+    GraphicsSettingsInspector_UserSettings:
+      value: 18134705175a055722080a3115371d4a0d55006876786860616b0471b8b16060b5a966f4ab782f352907e3350a3b272afe063d12e60e240a1c0bbf5453ca1e1a05dc3dcb1dc11119852b19c0c918c3eadbd19adfd6e2f1ddcccca1febac5e0f1e3f4b7e8aba4cec5a4abfba39fcbd7c1cdc3b9c1edd5dac2ae90cc
+      flags: 0
     RecentlyUsedSceneGuid-0:
       value: 5409035055545d0b5a560e77487159444e1541722a7e70667d2f4c64b5e36768
       flags: 0
@@ -18,6 +21,7 @@ EditorUserSettings:
       value: 0507570504010c590b0a542416775d14424f4a7b782e7232287e4e67e6e43160
       flags: 0
     RecentlyUsedSceneGuid-4:
+<<<<<<< Updated upstream
       value: 0105555e060d5b0b5f0a0f7440735c4413164a7d2f7170677e2f4a35e1b5616d
       flags: 0
     RecentlyUsedSceneGuid-5:
@@ -33,7 +37,24 @@ EditorUserSettings:
       value: 5a08075703545a0c5f08592115775d464115482f2e2c736979711c64b7b36361
       flags: 0
     RecentlyUsedSceneGuid-9:
+=======
+      value: 5555520450575a085e0f5c7a492009444e151d7d742e706374711b67e3e3666e
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5101525106025a0e5b5c5927432106441416482c7f297f31752d4a30b1e16468
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+>>>>>>> Stashed changes
       value: 5304045707570a09595d5e2442210b444f4f4d7d7e7f7234782c1b31e6b46568
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 0105555e060d5b0b5f0a0f7440735c4413164a7d2f7170677e2f4a35e1b5616d
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5a08075703545a0c5f08592115775d464115482f2e2c736979711c64b7b36361
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5a08575f5207595a0f5d59741173094444164f7d7d2a23317c7a4465bbe1646d
       flags: 0
     UnityEditor.ShaderGraph.Blackboard:
       value: 18135939215a0a5004000b0e15254b524c030a3f2964643d120d1230e9e93a3fd6e826abbd3c3e302a07a37e0901373ae01e0008f707250d171df81a53a5405d41895ac825e0100ec20313c0d91cddccd3d0c7efcca9bd80908fecb0f9cfddf1eff4e7a1b1eae482f0fdaee1e1928b86d888ed909c968797a7cf

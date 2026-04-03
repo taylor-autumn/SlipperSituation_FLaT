@@ -1,8 +1,5 @@
-using NUnit.Framework;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 
 public class itemManager : MonoBehaviour
@@ -120,6 +117,8 @@ public class itemManager : MonoBehaviour
             if (stoveRenderer.sharedMaterial == stoveMaterial && stoves.Count>0)
             {
                 playerRef.meltSpeed = deathMelt;
+                //glitch when one is off and one is on huh
+                //when I die from stove it fucks up the respawn and respawns me where I am
             }
         }
         
@@ -176,23 +175,20 @@ public class itemManager : MonoBehaviour
         }
         if (mentosCounter == 1)
         {
-            print("IT IS 1");
             bubbles.gameObject.SetActive(true);
             main.simulationSpeed = 0.2f;
             emission.rateOverTime = 5;
         }
         if (mentosCounter == 2)
         {
-            print("IT IS 2");
             main.simulationSpeed = 0.7f;
             emission.rateOverTime = 20;
         }
         if (mentosCounter == 3)
         {
-            print("IT IS 3");
             main.simulationSpeed = 1f;
             emission.rateOverTime = 50;
-            Invoke("loadLevel2", 3f);
+            //Invoke("loadLevel2", 3f);
         }
     }
     public void loadLevel2()

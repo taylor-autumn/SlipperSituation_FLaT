@@ -3291,7 +3291,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688976610}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -9640,7 +9640,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918917836}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca6300f50343246309d5f07e9fc16d57, type: 3}
   m_Name: 
@@ -15757,7 +15757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6300f50343246309d5f07e9fc16d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::conveyerBelt
-  speed: 15
+  speed: 30
   direction: {x: 0, y: 1.5, z: 0}
   onBelt: []
   playerGuy: {fileID: 1341473967}
@@ -18387,7 +18387,7 @@ Transform:
   m_GameObject: {fileID: 1341473967}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.700005, y: 0.6500001, z: 29.420002}
+  m_LocalPosition: {x: 89.71001, y: 2.2399998, z: 1.9000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18866,7 +18866,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456540113}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -20463,7 +20463,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600591349}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -27738,7 +27738,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922058984}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -28758,7 +28758,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029548494}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -29927,7 +29927,7 @@ Transform:
   m_GameObject: {fileID: 2127965613}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15272553, y: -0.2959073, z: 0.047990125, w: 0.9417063}
-  m_LocalPosition: {x: 49.9, y: 4.32, z: 20.69}
+  m_LocalPosition: {x: 94.91, y: 5.91, z: -6.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
