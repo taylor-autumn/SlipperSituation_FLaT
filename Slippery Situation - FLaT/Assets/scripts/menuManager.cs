@@ -34,6 +34,9 @@ public class menuManager : MonoBehaviour
 
     public void loadSavedScene()
     {
+        TMP_Text loadText=GameObject.Find("noLoadText").GetComponent<TMP_Text>();
+        Animator loadAnim = loadText.gameObject.GetComponent<Animator>();
+
         sceneData data = saveSystem.loadScene();
         if (data != null && data.currentScene!="taylor n leah")
         {
@@ -41,10 +44,16 @@ public class menuManager : MonoBehaviour
         }else if (data.currentScene=="taylor n leah")
         {
             print("its the first one");
+            loadAnim.SetTrigger("show");
+            loadText.color = Color.red;
+            loadText.text = "The Loaded Save is on the first level, just start a new game bro";
         }
         else if (data==null)
         {
             print("its null");
+            loadAnim.SetTrigger("show");
+            loadText.color = Color.red;
+            loadText.text = "There is no save to load! Go start a game to save one.";
         }
     }
 
