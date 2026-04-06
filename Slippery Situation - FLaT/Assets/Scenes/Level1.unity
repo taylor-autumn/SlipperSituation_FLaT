@@ -699,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c6c76453e748df4aaec007bfd13c8a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 116.646385
+      value: 117.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c6c76453e748df4aaec007bfd13c8a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20910,13 +20910,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::itemManager
   stoves: []
-  firstFreezingPoint: {fileID: 0}
+  firstFreezingPointTransform: {fileID: 0}
   currentRespawnTransform: {fileID: 0}
   ogDrag: 0
   currentDrag: 10
   ogMelt: 0
   currentMelt: 0.05
   deathMelt: 0.7
+  intensity2: 0.25
+  intensity3: 0.32
   stoveMaterial: {fileID: 2100000, guid: b737e654d047176469701b5ca057fa81, type: 2}
   mentosCounter: 0
   bubbles: {fileID: 0}
