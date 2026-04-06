@@ -97,8 +97,6 @@ public class itemManager : MonoBehaviour
 
     public void ultraRespawn()
     {
-        //player.transform.position = firstFreezingPointTransform.transform.position;
-        //currentRespawnTransform.position = firstFreezingPointTransform.transform.position;
         stoves.Clear();
         playerRef.groundDrag = ogDrag;
         playerRef.meltSpeed = ogMelt;
