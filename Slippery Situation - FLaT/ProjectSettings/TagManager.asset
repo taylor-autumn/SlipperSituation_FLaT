@@ -12,12 +12,14 @@ TagManager:
   - mud
   - soap
   - blower
-  - sunSpot
   - towel
   - stove
   - can
   - mentos
   - moveObj
+  - sunSpot1
+  - sunSpot2
+  - sunSpot3
   layers:
   - Default
   - TransparentFX

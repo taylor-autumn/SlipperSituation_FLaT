@@ -106,7 +106,7 @@ public class playerMove : MonoBehaviour
                 deathPopUp.SetActive(false);
             }
         }
-        if (transform.position.y < deathHeight)
+        if (!dead &&  transform.position.y < deathHeight)
         {
             respawn();
         }
@@ -221,9 +221,20 @@ public class playerMove : MonoBehaviour
     public void ultraRespawn()
     {
         print("ultra respawning");
-        itemRef.ultraRespawn(gameObject);
+        itemRef.ultraRespawn();
         resetScale();
 
+        //REPEAT?
+        Transform firstFreezingPoint = itemRef.firstFreezingPointTransform;
+        Transform currentRespawn = itemRef.currentRespawnTransform;
+
+        print("CURRENT POS: " + gameObject.transform.position);
+        print("RESPAWN POS: " + firstFreezingPoint.transform.position);
+
+        currentRespawn.transform.position=firstFreezingPoint.transform.position;
+        gameObject.transform.position=currentRespawn.transform.position;
+
+        //rotation
         transform.rotation = Quaternion.identity;
 
         rb.linearVelocity = Vector3.zero;

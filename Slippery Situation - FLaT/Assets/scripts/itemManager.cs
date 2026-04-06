@@ -9,7 +9,7 @@ public class itemManager : MonoBehaviour
     public List<GameObject> stoves;
 
     [Header("Respawn")]
-    public Transform firstFreezingPoint;
+    public Transform firstFreezingPointTransform;
     public Transform currentRespawnTransform;
 
     [Header("Player qualities")]
@@ -18,6 +18,8 @@ public class itemManager : MonoBehaviour
     public float ogMelt;
     public float currentMelt = 0.05f;
     public float deathMelt = 0.5f;
+    public float intensity2 = 0.25f;
+    public float intensity3 = 0.32f;
 
     [Header("Stove shit")]
     public Material stoveMaterial;
@@ -45,7 +47,7 @@ public class itemManager : MonoBehaviour
     void Start()
     {
         playerRef=GetComponent<playerMove>();
-        currentRespawnTransform=firstFreezingPoint;
+        currentRespawnTransform=firstFreezingPointTransform;
         ogDrag=playerRef.groundDrag;
         ogMelt=playerRef.meltSpeed;
 
@@ -57,9 +59,15 @@ public class itemManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        manageBubbles();
+        if (bubbles != null)
+        {
+            manageBubbles();
+        }
 
-        fan.transform.RotateAround(fan.position, fanRotationAxis, fanSpeed * Time.deltaTime);
+        if (fan != null)
+        {
+            fan.transform.RotateAround(fan.position, fanRotationAxis, fanSpeed * Time.deltaTime);
+        }
 
         //muddyying
         if (dirty)
@@ -87,9 +95,14 @@ public class itemManager : MonoBehaviour
         player.transform.position = currentRespawnTransform.position;
     }
 
-    public void ultraRespawn(GameObject player)
+    public void ultraRespawn()
     {
-        player.transform.position = firstFreezingPoint.position;
+        //player.transform.position = firstFreezingPointTransform.transform.position;
+        //currentRespawnTransform.position = firstFreezingPointTransform.transform.position;
+        stoves.Clear();
+        playerRef.groundDrag = ogDrag;
+        playerRef.meltSpeed = ogMelt;
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -103,10 +116,20 @@ public class itemManager : MonoBehaviour
                 playerRef.resetScale();
             }
         }
-        if (other.gameObject.CompareTag("sunSpot")) //sun spot
+        if (other.gameObject.CompareTag("sunSpot1")) //sun spot
         {
             playerRef.groundDrag = currentDrag;
             playerRef.meltSpeed = currentMelt;
+        }
+        if (other.gameObject.CompareTag("sunSpot2")) //sun spot
+        {
+            playerRef.groundDrag = currentDrag;
+            playerRef.meltSpeed = intensity2;
+        }
+        if (other.gameObject.CompareTag("sunSpot3")) //sun spot
+        {
+            playerRef.groundDrag = currentDrag;
+            playerRef.meltSpeed = intensity3;
         }
 
         if (other.gameObject.CompareTag("stove"))
@@ -117,8 +140,6 @@ public class itemManager : MonoBehaviour
             if (stoveRenderer.sharedMaterial == stoveMaterial && stoves.Count>0)
             {
                 playerRef.meltSpeed = deathMelt;
-                //glitch when one is off and one is on huh
-                //when I die from stove it fucks up the respawn and respawns me where I am
             }
         }
         
@@ -139,7 +160,7 @@ public class itemManager : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("sunSpot") || other.gameObject.CompareTag("towel"))
+        if (other.gameObject.CompareTag("sunSpot1") || other.gameObject.CompareTag("sunSpot2") || other.gameObject.CompareTag("sunSpot3") || other.gameObject.CompareTag("towel"))
         {
             playerRef.groundDrag = ogDrag;
             playerRef.meltSpeed = ogMelt;
