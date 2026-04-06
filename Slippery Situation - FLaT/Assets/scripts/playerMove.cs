@@ -224,7 +224,6 @@ public class playerMove : MonoBehaviour
         itemRef.ultraRespawn();
         resetScale();
 
-        //REPEAT?
         Transform firstFreezingPoint = itemRef.firstFreezingPointTransform;
         Transform currentRespawn = itemRef.currentRespawnTransform;
 
