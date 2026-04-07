@@ -23,7 +23,6 @@ public class itemManager : MonoBehaviour
 
     [Header("Stove shit")]
     public Material stoveMaterial;
-    //public GameObject thirdStove;
 
     [Header("Soda Bubbles")]
     public int mentosCounter = 0;
@@ -137,6 +136,7 @@ public class itemManager : MonoBehaviour
 
             if (stoveRenderer.sharedMaterial == stoveMaterial && stoves.Count>0)
             {
+                print("THIS IS WORKING");
                 playerRef.meltSpeed = deathMelt;
             }
         }
