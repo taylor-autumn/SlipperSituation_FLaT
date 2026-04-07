@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using Unity.VisualScripting;
+using System.Collections.Generic;
 
 public class activatingScript : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class activatingScript : MonoBehaviour
     private int index;
     private playerMove playerMoveScript;
     public bool talkingToggle;
+    public bool dissapearing;
 
     void Start()
     {
@@ -80,6 +83,10 @@ public class activatingScript : MonoBehaviour
         else
         {
             index++;
+            if (dissapearing == true)
+            {
+                Destroy(GetComponent<BoxCollider>());
+            }
             textIcon.SetActive(false);
             playerMoveScript.enabled = true;
             talkingToggle = false;
