@@ -3,7 +3,8 @@ using UnityEngine;
 public class moveableObjects : MonoBehaviour
 {
     [Header("Object info")]
-    private Vector3 ogObjPos;
+    Vector3 ogObjPos;
+    Quaternion ogObjRot;
     Rigidbody rb;
     public float deathHeight = -10f;
 
@@ -17,7 +18,7 @@ public class moveableObjects : MonoBehaviour
     public Material transparentMaterial;
     public Material filledMaterial;
     public Material onMaterial;
-    public bool jam2Entered = false;
+    bool jam2Entered = false;
 
     //other components
     BoxCollider obj1Col;
@@ -32,7 +33,8 @@ public class moveableObjects : MonoBehaviour
     {
         
         rb=GetComponent<Rigidbody>();
-        ogObjPos = transform.position;
+        ogObjPos = transform.localPosition;
+        ogObjRot = transform.localRotation;
 
         //platform stuff
         if (obj1 != null)
@@ -47,7 +49,9 @@ public class moveableObjects : MonoBehaviour
         }
         if (signalObj1!=null) signalRenderer1= signalObj1.GetComponent<Renderer>();
         if (signalObj2 != null) signalRenderer2 = signalObj2.GetComponent<Renderer>();
-        
+
+        print(gameObject.name + "local position = " + gameObject.transform.localPosition);
+
     }
 
     // Update is called once per frame
@@ -60,13 +64,12 @@ public class moveableObjects : MonoBehaviour
     }
 
     public void respawnObj()
-    {  
-        gameObject.transform.position = ogObjPos;
-
-        transform.rotation = Quaternion.identity;
-
+    {
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
+
+        transform.localPosition = ogObjPos;
+        transform.localRotation = ogObjRot;
     }
 
     public void activatePlatform()
@@ -163,7 +166,6 @@ public class moveableObjects : MonoBehaviour
                 jam2Entered = false;
                 resetStove2();
             }
-            
         }
     }
 

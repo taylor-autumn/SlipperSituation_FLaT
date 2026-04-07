@@ -23,13 +23,12 @@ public class menuManager : MonoBehaviour
     public void openAbout()
     {
         titleText.text = "About Page";
-        wordText.text = "insert about description here";
+        wordText.text = "One frigid night, a freshly frozen ice cube broke free from their tray with a dream of adventuring into the outside world. But little did their solid form know, it had left a watery trail behind on their journey. The world wasn't as cold as they thought it would be...";
     }
 
     public void openCredits()
     {
         titleText.text = "Credits Page";
-        wordText.text = "insert credits description here";
     }
 
     public void loadSavedScene()

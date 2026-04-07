@@ -210,8 +210,6 @@ public class playerMove : MonoBehaviour
         itemRef.respawn(gameObject);
         resetScale();
 
-        transform.rotation = Quaternion.identity;
-
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
@@ -232,9 +230,6 @@ public class playerMove : MonoBehaviour
 
         currentRespawn.transform.position=firstFreezingPoint.transform.position;
         gameObject.transform.position=currentRespawn.transform.position;
-
-        //rotation
-        transform.rotation = Quaternion.identity;
 
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
