@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+using Unity.VisualScripting;
+using System;
 
 public class itemManager : MonoBehaviour
 {
@@ -75,6 +78,12 @@ public class itemManager : MonoBehaviour
             if (changering < 1)
                 {
                     changering += 0.0008f;
+                    
+                }
+            float slowingdown = playerRef.groundDrag += 0.0008f;
+            if (slowingdown == ogDrag + 10f)
+                {
+                    playerRef.groundDrag = ogDrag + 10f;
                 }
             Color lerpingit = Color.Lerp(normColor, mudColor, changering);
             myMaterial.color = lerpingit;
@@ -84,6 +93,12 @@ public class itemManager : MonoBehaviour
             if (changering > 0)
                 {
                     changering -= 0.0008f;
+                    
+                }
+            float speedingup = playerRef.groundDrag -= 0.005f;
+                    if (speedingup < ogDrag + 0.05)
+                {
+                    playerRef.groundDrag = ogDrag;
                 }
             Color lerpingit = Color.Lerp(normColor, mudColor, changering);
             myMaterial.color = lerpingit;
