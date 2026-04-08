@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Cel 33
+  m_Name: Shader Graphs_Cel 36
   m_Shader: {fileID: -6465566751694194690, guid: 8529db5d8e2d9374cb3e0671e0311c34, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -42,13 +42,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Max_Light: 1
-    - _Min_Light: 0.3
+    - _Max_Light: 1.32
+    - _Min_Light: 0.21
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Shade: 0.64
+    - _Shade: 0.44
     m_Colors:
-    - _Color: {r: 0.6784314, g: 0.6117647, b: 0.5411765, a: 1}
+    - _Color: {r: 0.48235294, g: 0.7294118, b: 0.83137256, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3717011501753301564
