@@ -50,7 +50,6 @@ public class moveableObjects : MonoBehaviour
         if (signalObj1!=null) signalRenderer1= signalObj1.GetComponent<Renderer>();
         if (signalObj2 != null) signalRenderer2 = signalObj2.GetComponent<Renderer>();
 
-        print(gameObject.name + "local position = " + gameObject.transform.localPosition);
 
     }
 

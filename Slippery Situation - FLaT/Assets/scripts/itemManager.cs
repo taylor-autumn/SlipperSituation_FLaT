@@ -151,7 +151,6 @@ public class itemManager : MonoBehaviour
 
             if (stoveRenderer.sharedMaterial == stoveMaterial && stoves.Count>0)
             {
-                print("THIS IS WORKING");
                 playerRef.meltSpeed = deathMelt;
             }
         }

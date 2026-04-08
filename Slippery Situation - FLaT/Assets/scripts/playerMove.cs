@@ -225,10 +225,7 @@ public class playerMove : MonoBehaviour
         Transform firstFreezingPoint = itemRef.firstFreezingPointTransform;
         Transform currentRespawn = itemRef.currentRespawnTransform;
 
-        print("CURRENT POS: " + gameObject.transform.position);
-        print("RESPAWN POS: " + firstFreezingPoint.transform.position);
-
-        currentRespawn.transform.position=firstFreezingPoint.transform.position;
+        currentRespawn = firstFreezingPoint;
         gameObject.transform.position=currentRespawn.transform.position;
 
         rb.linearVelocity = Vector3.zero;
