@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1710105325}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -260,7 +260,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (26)
@@ -596,7 +596,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: def5b78339f99ea4c9fb0fbc939f1a40, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: def5b78339f99ea4c9fb0fbc939f1a40, type: 3}
       propertyPath: m_Name
       value: plant (1)
@@ -701,7 +701,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f187b1da6477e49e1a1ea8844401c18c, type: 2}
+  - {fileID: 2100000, guid: 6773803286a46ee429037a62a3b60832, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -871,6 +871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: af6f9f8d9953b344fad8b594df2edfd5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: af6f9f8d9953b344fad8b594df2edfd5, type: 3}
       propertyPath: m_Name
       value: container_kitchen_B_red
@@ -1023,7 +1027,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c33eeb58ade60640b07a9cfc9397cae, type: 2}
+  - {fileID: 2100000, guid: 386fc1c0625d16449ac8c80a43a9aa02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1202,7 +1206,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55e9754ab81e341f39741122b324463e, type: 2}
+  - {fileID: 2100000, guid: 6ad3da6d40fe33c49835383f3d36668a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1335,7 +1339,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c33eeb58ade60640b07a9cfc9397cae, type: 2}
+  - {fileID: 2100000, guid: 386fc1c0625d16449ac8c80a43a9aa02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1430,7 +1434,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (27)
@@ -2877,6 +2881,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 99b399af13f4e5148a6f3a2a08f53cad, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 99b399af13f4e5148a6f3a2a08f53cad, type: 3}
       propertyPath: m_Name
       value: kettle
@@ -3562,6 +3570,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 3c69cec9c8bc8ae4c9468487d4e8daae, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 3c69cec9c8bc8ae4c9468487d4e8daae, type: 3}
       propertyPath: m_Name
       value: oven_glove
@@ -4024,7 +4036,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (23)
@@ -4536,7 +4548,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4c2429f051b4fd641a89ef593ec41463, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c2429f051b4fd641a89ef593ec41463, type: 3}
       propertyPath: m_Name
       value: container_kitchen_B_white
@@ -4841,7 +4853,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d0cb6c97ea4931d4cb9fc07f22432712, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: d0cb6c97ea4931d4cb9fc07f22432712, type: 3}
       propertyPath: m_Name
       value: utensils_cup (1)
@@ -5091,6 +5103,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 104aee4c6f1f42b4e8e36d56fc40d279, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 104aee4c6f1f42b4e8e36d56fc40d279, type: 3}
       propertyPath: m_Name
       value: mug_blue
@@ -5689,7 +5705,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55e9754ab81e341f39741122b324463e, type: 2}
+  - {fileID: 2100000, guid: 6ad3da6d40fe33c49835383f3d36668a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5742,6 +5758,230 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.017712472, y: 0.017975533, z: 0.0074590924}
   m_Center: {x: 0.00953211, y: 0.034320433, z: 0.027680553}
+--- !u!1 &290556086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290556087}
+  - component: {fileID: 290556092}
+  - component: {fileID: 290556091}
+  - component: {fileID: 290556090}
+  - component: {fileID: 290556089}
+  - component: {fileID: 290556088}
+  m_Layer: 0
+  m_Name: stove trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &290556087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290556086}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.3427, y: -2.7352, z: 15.1749}
+  m_LocalScale: {x: 22.301744, y: 6.4705253, z: 76.60324}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 537050491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &290556088
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290556086}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: b2e8864127cf7774bae4f710b7b5956b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.302
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &290556089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290556086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13551ef72a654f240966b534b3b98d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXcolider
+  audioSource: {fileID: 290556088}
+--- !u!65 &290556090
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290556086}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &290556091
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290556086}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &290556092
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290556086}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &295075990
 GameObject:
   m_ObjectHideFlags: 0
@@ -5995,7 +6235,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (18)
@@ -6175,7 +6415,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1b2e60e7826454350964b179cadb1029, type: 2}
+  - {fileID: 2100000, guid: 7353f2b684e367f42a26ae81db34629f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6758,7 +6998,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (17)
@@ -6923,7 +7163,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (22)
@@ -7307,6 +7547,135 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 092b262c0f9d23f4ba552cead7e62b11, type: 3}
+--- !u!1 &374499518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 374499519}
+  - component: {fileID: 374499520}
+  m_Layer: 0
+  m_Name: kitchen music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &374499519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374499518}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.10461998, z: 13.73274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 537050491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &374499520
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374499518}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: b9d4db3669b4fb74b80ed14e6a4b9e73, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.499
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &376435399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7496,7 +7865,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 105abb8d27b1e9244b51233912785ba1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 105abb8d27b1e9244b51233912785ba1, type: 3}
       propertyPath: m_Name
       value: blinds_kitchen (1)
@@ -7884,7 +8253,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55e9754ab81e341f39741122b324463e, type: 2}
+  - {fileID: 2100000, guid: 6ad3da6d40fe33c49835383f3d36668a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8007,7 +8376,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c33eeb58ade60640b07a9cfc9397cae, type: 2}
+  - {fileID: 2100000, guid: 386fc1c0625d16449ac8c80a43a9aa02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13641,7 +14010,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55e9754ab81e341f39741122b324463e, type: 2}
+  - {fileID: 2100000, guid: 6ad3da6d40fe33c49835383f3d36668a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13757,7 +14126,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (20)
@@ -13969,7 +14338,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (1)
@@ -14171,7 +14540,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c33eeb58ade60640b07a9cfc9397cae, type: 2}
+  - {fileID: 2100000, guid: 386fc1c0625d16449ac8c80a43a9aa02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15247,6 +15616,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: ee1ae19d3a3e77f4d8dad883a2b1f00f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: ee1ae19d3a3e77f4d8dad883a2b1f00f, type: 3}
       propertyPath: m_Name
       value: mug_yellow
@@ -15511,6 +15884,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 092b262c0f9d23f4ba552cead7e62b11, type: 3}
+--- !u!1 &537050490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 537050491}
+  m_Layer: 0
+  m_Name: audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &537050491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537050490}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.66762, y: 14.93272, z: -8.92768}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 290556087}
+  - {fileID: 1261316410}
+  - {fileID: 374499519}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &545497143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16178,7 +16585,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (3)
@@ -16254,7 +16661,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_window_small (5)
@@ -16717,7 +17124,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 22aa5ef12e505694dad44425e2d69ec1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 22aa5ef12e505694dad44425e2d69ec1, type: 3}
       propertyPath: m_Name
       value: kitchencounter_sink_backsplash
@@ -17684,7 +18091,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c33eeb58ade60640b07a9cfc9397cae, type: 2}
+  - {fileID: 2100000, guid: 386fc1c0625d16449ac8c80a43a9aa02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17979,7 +18386,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8107166122195158936, guid: cd0d74f38bf1044febb9810a427f1341, type: 3}
+  - {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18450,7 +18857,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (19)
@@ -18553,7 +18960,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9df9f8a176eff2e43a7fec84dd7c28a4, type: 2}
+  - {fileID: 2100000, guid: 9fe49d98367937b4e9e2d151776b3f68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18898,7 +19305,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 850e4378d4686f04181a6e17564eeae1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 850e4378d4686f04181a6e17564eeae1, type: 3}
       propertyPath: m_Name
       value: wall_modular_tiles_kitchen_half_corner_inner_B
@@ -18971,7 +19378,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56ec691e8aa5f4033a030e10b0c2ccc9, type: 2}
+  - {fileID: 2100000, guid: ef39e331a5e974842ba3e0304680a94e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19539,6 +19946,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: cecbbcf38b848ec4380b25d1895f5d59, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: cecbbcf38b848ec4380b25d1895f5d59, type: 3}
       propertyPath: m_Name
       value: papertowel_holder
@@ -19647,7 +20058,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: def5b78339f99ea4c9fb0fbc939f1a40, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: def5b78339f99ea4c9fb0fbc939f1a40, type: 3}
       propertyPath: m_Name
       value: plant (2)
@@ -20120,7 +20531,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (15)
@@ -27117,7 +27528,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb6fee96752db0544b94418f75798951, type: 2}
+  - {fileID: 2100000, guid: b179d53c072bd5047a285506f214a711, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27214,7 +27625,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c33eeb58ade60640b07a9cfc9397cae, type: 2}
+  - {fileID: 2100000, guid: 386fc1c0625d16449ac8c80a43a9aa02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32486,7 +32897,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c33eeb58ade60640b07a9cfc9397cae, type: 2}
+  - {fileID: 2100000, guid: 386fc1c0625d16449ac8c80a43a9aa02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33171,7 +33582,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (10)
@@ -38658,7 +39069,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69faa73a5d3bb4f2f8fbb184fdd6430d, type: 2}
+  - {fileID: 2100000, guid: 2cac51fc3015cdd47ab4f9f06e25498e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44301,7 +44712,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_window_small (3)
@@ -44849,7 +45260,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (9)
@@ -45553,7 +45964,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (16)
@@ -45916,7 +46327,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (24)
@@ -48354,7 +48765,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (16)
@@ -49608,7 +50019,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 0b7c90d6da14365498ecfacacf0debe3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 0b7c90d6da14365498ecfacacf0debe3, type: 3}
       propertyPath: m_Name
       value: sansevieria_plant_large_potted
@@ -49844,7 +50255,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c33eeb58ade60640b07a9cfc9397cae, type: 2}
+  - {fileID: 2100000, guid: 386fc1c0625d16449ac8c80a43a9aa02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49995,6 +50406,230 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.39999902, y: 0.5328545, z: 0.3999991}
   m_Center: {x: 0.000008329749, y: 0.26642725, z: 0}
+--- !u!1 &1261316409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1261316410}
+  - component: {fileID: 1261316415}
+  - component: {fileID: 1261316414}
+  - component: {fileID: 1261316413}
+  - component: {fileID: 1261316412}
+  - component: {fileID: 1261316411}
+  m_Layer: 0
+  m_Name: fan trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1261316410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261316409}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -32.2075, y: -2.74, z: 66.0859}
+  m_LocalScale: {x: 61.238605, y: 6.4705253, z: 20.558908}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 537050491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1261316411
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261316409}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 0e7614ed018371e4b8b0c9f4f7a86ee7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1261316412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261316409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13551ef72a654f240966b534b3b98d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXcolider
+  audioSource: {fileID: 1261316411}
+--- !u!65 &1261316413
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261316409}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1261316414
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261316409}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1261316415
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261316409}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1262089104
 GameObject:
   m_ObjectHideFlags: 0
@@ -50790,7 +51425,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (8)
@@ -51049,7 +51684,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55e9754ab81e341f39741122b324463e, type: 2}
+  - {fileID: 2100000, guid: 6ad3da6d40fe33c49835383f3d36668a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51311,7 +51946,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1459204130170183873, guid: cd0d74f38bf1044febb9810a427f1341, type: 3}
+  - {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
   - {fileID: -7991753905558605754, guid: cd0d74f38bf1044febb9810a427f1341, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -51480,7 +52115,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (10)
@@ -52289,7 +52924,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9df9f8a176eff2e43a7fec84dd7c28a4, type: 2}
+  - {fileID: 2100000, guid: 9fe49d98367937b4e9e2d151776b3f68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52379,7 +53014,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8107166122195158936, guid: cd0d74f38bf1044febb9810a427f1341, type: 3}
+  - {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
   - {fileID: 1058474326509676327, guid: cd0d74f38bf1044febb9810a427f1341, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -52475,7 +53110,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (2)
@@ -53313,7 +53948,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (29)
@@ -53508,7 +54143,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56ec691e8aa5f4033a030e10b0c2ccc9, type: 2}
+  - {fileID: 2100000, guid: ef39e331a5e974842ba3e0304680a94e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53603,7 +54238,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
+    - target: {fileID: -7511558181221131132, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_window_small
@@ -53830,7 +54469,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 105abb8d27b1e9244b51233912785ba1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 105abb8d27b1e9244b51233912785ba1, type: 3}
       propertyPath: m_Name
       value: blinds_kitchen (2)
@@ -54059,7 +54698,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 46bcb53d2a2be5c408acf399315b1df7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 46bcb53d2a2be5c408acf399315b1df7, type: 3}
       propertyPath: m_Name
       value: shelf_papertowel
@@ -54253,6 +54892,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: e230c8650fa517648b3e77ac26232afb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: e230c8650fa517648b3e77ac26232afb, type: 3}
       propertyPath: m_Name
       value: container_kitchen_A_white
@@ -54413,7 +55056,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (5)
@@ -54489,7 +55132,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (11)
@@ -55164,7 +55807,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (19)
@@ -55900,7 +56543,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb6fee96752db0544b94418f75798951, type: 2}
+  - {fileID: 2100000, guid: b179d53c072bd5047a285506f214a711, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -55992,6 +56635,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: aa320b1b4b3a70b4aa3b24eaee8be1b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: aa320b1b4b3a70b4aa3b24eaee8be1b1, type: 3}
       propertyPath: m_Name
       value: knife
@@ -56308,7 +56955,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (21)
@@ -56673,7 +57320,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 54a419e3f4237f142b6e4418a0e9575d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 54a419e3f4237f142b6e4418a0e9575d, type: 3}
       propertyPath: m_Name
       value: monstera_plant_small_potted
@@ -56959,7 +57606,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (7)
@@ -57108,7 +57755,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1459204130170183873, guid: cd0d74f38bf1044febb9810a427f1341, type: 3}
+  - {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57198,7 +57845,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e110b5e588f34e1f83e2b28ebf32997, type: 2}
+  - {fileID: 2100000, guid: d2f22de12f17c0e45ac2574df409673b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57639,7 +58286,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
+    - target: {fileID: -7511558181221131132, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_window_small (4)
@@ -57742,7 +58393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55e9754ab81e341f39741122b324463e, type: 2}
+  - {fileID: 2100000, guid: 6ad3da6d40fe33c49835383f3d36668a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58868,7 +59519,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 313e339217826f545a374e6dff1fc5c5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 313e339217826f545a374e6dff1fc5c5, type: 3}
       propertyPath: m_Name
       value: wall_knife_rack
@@ -59287,7 +59938,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 73bb3adc8d1206c47884a3ddf7c0be16, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 73bb3adc8d1206c47884a3ddf7c0be16, type: 3}
       propertyPath: m_Name
       value: container_kitchen_A_white
@@ -59442,7 +60093,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56ec691e8aa5f4033a030e10b0c2ccc9, type: 2}
+  - {fileID: 2100000, guid: ef39e331a5e974842ba3e0304680a94e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59602,7 +60253,7 @@ Light:
   serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Intensity: 1.2
   m_Range: 10
   m_SpotAngle: 8.197919
   m_InnerSpotAngle: 0
@@ -60024,6 +60675,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: d248a2fe59ce63d4fb965c440353ed41, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: d248a2fe59ce63d4fb965c440353ed41, type: 3}
       propertyPath: m_Name
       value: dishrack_plates
@@ -60130,7 +60785,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: f3c91efb4e6502842b5a26193e1f0a89, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: f3c91efb4e6502842b5a26193e1f0a89, type: 3}
       propertyPath: m_Name
       value: container_kitchen_A_blue
@@ -60811,7 +61466,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
+    - target: {fileID: -7511558181221131132, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: ff03a75b564b5c449816bc0c01e94742, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_window_small (2)
@@ -61782,6 +62441,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: bbb4dbe5652a6c74b93b956897b189cf, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: bbb4dbe5652a6c74b93b956897b189cf, type: 3}
       propertyPath: m_Name
       value: cuttingboard
@@ -62010,11 +62673,11 @@ PrefabInstance:
     - target: {fileID: -8045875301724930529, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 87a6f532522f9a941b6de83abf555cbd, type: 2}
+      objectReference: {fileID: 2100000, guid: a6e1380454e96dd469d292148144c5ae, type: 2}
     - target: {fileID: -5869791727073602361, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d56cd7bf27b75ac47ac33bcc60b487f4, type: 2}
+      objectReference: {fileID: 2100000, guid: 4afaf18f10bc9e546adfe6b7afe4ccd4, type: 2}
     - target: {fileID: -4491686898852273272, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -62022,7 +62685,7 @@ PrefabInstance:
     - target: {fileID: 645098804229233803, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a950bbc99e74f2a4ba501adbbd3a3a75, type: 2}
+      objectReference: {fileID: 2100000, guid: df491c13c516fa049be80b41a46b641b, type: 2}
     - target: {fileID: 919132149155446097, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: m_Name
       value: Memphis fan v6
@@ -62034,11 +62697,11 @@ PrefabInstance:
     - target: {fileID: 4531912228224351498, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a8b64fea2b566954fbf1fb9af1f949b6, type: 2}
+      objectReference: {fileID: 2100000, guid: df491c13c516fa049be80b41a46b641b, type: 2}
     - target: {fileID: 5427723238805837750, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 87a6f532522f9a941b6de83abf555cbd, type: 2}
+      objectReference: {fileID: 2100000, guid: a6e1380454e96dd469d292148144c5ae, type: 2}
     - target: {fileID: 8564278302549283964, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -62046,7 +62709,7 @@ PrefabInstance:
     - target: {fileID: 8897486977103464848, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7d7f6438cf1841147bde7bcda8e532f7, type: 2}
+      objectReference: {fileID: 2100000, guid: 5bda8a3bc910e614b8d7278a44a6bc98, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -2369814862207664461, guid: 23ec98475cb617f49a564b4dfc991ce6, type: 3}
@@ -62196,7 +62859,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (25)
@@ -62758,7 +63421,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (15)
@@ -62860,7 +63523,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 60710c8ed6fa243b584d8ffa86c8ecbd, type: 2}
+  - {fileID: 2100000, guid: 4afaf18f10bc9e546adfe6b7afe4ccd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -63033,7 +63696,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (4)
@@ -63293,6 +63956,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: d3a2625a764ec6640bbe4111af97d1c2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: d3a2625a764ec6640bbe4111af97d1c2, type: 3}
       propertyPath: m_Name
       value: pot
@@ -63409,7 +64076,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (3)
@@ -63851,7 +64518,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (17)
@@ -64244,7 +64911,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (28)
@@ -64424,7 +65091,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb6fee96752db0544b94418f75798951, type: 2}
+  - {fileID: 2100000, guid: b179d53c072bd5047a285506f214a711, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64847,7 +65514,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (18)
@@ -65380,7 +66047,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1f6550859e5760345ac4516c8d18c4bf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 1f6550859e5760345ac4516c8d18c4bf, type: 3}
       propertyPath: m_Name
       value: container_kitchen_B_red
@@ -65834,7 +66501,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e110b5e588f34e1f83e2b28ebf32997, type: 2}
+  - {fileID: 2100000, guid: d2f22de12f17c0e45ac2574df409673b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66019,7 +66686,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 848b62dc0c9ffd74a8103d7b8fb47fe2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 848b62dc0c9ffd74a8103d7b8fb47fe2, type: 3}
       propertyPath: m_Name
       value: pothos_plant_large_potted
@@ -66251,7 +66918,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1548f4fdd5f06cd468dd8ce1ca375e7e, type: 2}
+  - {fileID: 2100000, guid: 8dd352849a6a18e4f993347e6ab358b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66595,7 +67262,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (1)
@@ -66780,7 +67447,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d0cb6c97ea4931d4cb9fc07f22432712, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: d0cb6c97ea4931d4cb9fc07f22432712, type: 3}
       propertyPath: m_Name
       value: utensils_cup
@@ -67154,7 +67821,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2691a6c715d0e5b468b4863e8fe6a4f0, type: 2}
+      objectReference: {fileID: 2100000, guid: 614eb59a9a31b0e4d9278a9c7cf69d9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 86d8cce9c4e18d844978746a864dfb82, type: 3}
       propertyPath: m_Name
       value: kitchencounter_straight_B_backsplash (12)
@@ -67392,7 +68059,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (4)
@@ -67712,7 +68379,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (2)
@@ -68003,7 +68670,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fd1f8e481b5a03f4b86ba94abf34725a, type: 2}
+  - {fileID: 2100000, guid: 44baa9c77475f164eb7d193bcfa4b420, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68216,7 +68883,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 092b262c0f9d23f4ba552cead7e62b11, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 092b262c0f9d23f4ba552cead7e62b11, type: 3}
       propertyPath: m_Name
       value: floor_tiles_kitchen (83)
@@ -73243,7 +73910,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69faa73a5d3bb4f2f8fbb184fdd6430d, type: 2}
+  - {fileID: 2100000, guid: 2cac51fc3015cdd47ab4f9f06e25498e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73338,7 +74005,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e33e0d6a57ada4e4c8a274d94a4638b9, type: 2}
+  - {fileID: 2100000, guid: 4afaf18f10bc9e546adfe6b7afe4ccd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73666,6 +74333,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: e36900df0b25f1c4eb6b057a77370851, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: e36900df0b25f1c4eb6b057a77370851, type: 3}
       propertyPath: m_Name
       value: toaster
@@ -73777,7 +74448,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cd00cfbdd3d4b44c95b81a964f73fa3, type: 2}
+      objectReference: {fileID: 2100000, guid: ee64abc6f99315948803ac5d489e463b, type: 2}
     - target: {fileID: 919132149155446097, guid: 106261d30016d0149a7a7b2d8765b0e6, type: 3}
       propertyPath: m_Name
       value: wall_tiles_kitchen_straight (11)
@@ -74137,3 +74808,4 @@ SceneRoots:
   - {fileID: 776201921}
   - {fileID: 1166813423}
   - {fileID: 1632719136}
+  - {fileID: 537050491}
