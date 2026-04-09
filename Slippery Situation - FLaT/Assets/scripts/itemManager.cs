@@ -1,9 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
-using Unity.VisualScripting;
-using System;
 
 public class itemManager : MonoBehaviour
 {
@@ -56,6 +53,15 @@ public class itemManager : MonoBehaviour
         //muddy
         soapParticles.SetActive(false);
         myMaterial.color = normColor;
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Level3.2")
+        {
+            print("dirt");
+            changering = 0.99f;
+            Color lerpingit = Color.Lerp(normColor, mudColor, changering);
+            myMaterial.color = lerpingit;
+            playerRef.groundDrag = ogDrag + 10f;
+        }
     }
 
     // Update is called once per frame
@@ -76,11 +82,11 @@ public class itemManager : MonoBehaviour
         {
             if (changering < 1)
                 {
-                    changering += 0.0008f;
+                    changering += 0.002f;
                     
                 }
-            float slowingdown = playerRef.groundDrag += 0.0008f;
-            if (slowingdown == ogDrag + 10f)
+            float slowingdown = playerRef.groundDrag += 0.008f;
+            if (slowingdown > ogDrag + 5f)
                 {
                     playerRef.groundDrag = ogDrag + 10f;
                 }
@@ -94,7 +100,7 @@ public class itemManager : MonoBehaviour
                     changering -= 0.0008f;
                     
                 }
-            float speedingup = playerRef.groundDrag -= 0.005f;
+            float speedingup = playerRef.groundDrag -= 0.01f;
                     if (speedingup < ogDrag + 0.05)
                 {
                     playerRef.groundDrag = ogDrag;
