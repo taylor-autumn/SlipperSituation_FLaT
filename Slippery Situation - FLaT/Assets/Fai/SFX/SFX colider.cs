@@ -6,9 +6,17 @@ public class SFXcolider : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && !audioSource.isPlaying)
+        if (other.CompareTag("Player"))
         {
             audioSource.Play();
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            audioSource.Stop();
         }
     }
 }
