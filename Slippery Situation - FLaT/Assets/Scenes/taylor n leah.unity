@@ -5786,7 +5786,9 @@ MonoBehaviour:
   obj1: {fileID: 1176520574}
   obj2: {fileID: 0}
   targetPlatform: {fileID: 1131990258}
-  signalObj: {fileID: 1300098234}
+  targetPlatform2: {fileID: 0}
+  signalObj1: {fileID: 0}
+  signalObj2: {fileID: 0}
   transparentMaterial: {fileID: 2100000, guid: b737e654d047176469701b5ca057fa81, type: 2}
   filledMaterial: {fileID: 2100000, guid: 7a8be95e4e7c9594b8528e2a03125f0c, type: 2}
   onMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
@@ -6285,7 +6287,9 @@ MonoBehaviour:
   obj1: {fileID: 1256755117}
   obj2: {fileID: 0}
   targetPlatform: {fileID: 252292671}
-  signalObj: {fileID: 1030174197}
+  targetPlatform2: {fileID: 0}
+  signalObj1: {fileID: 0}
+  signalObj2: {fileID: 0}
   transparentMaterial: {fileID: 2100000, guid: ffc628e1f4d28c7469042f489e6a1e8d, type: 2}
   filledMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
   onMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
@@ -7153,7 +7157,9 @@ MonoBehaviour:
   obj1: {fileID: 0}
   obj2: {fileID: 0}
   targetPlatform: {fileID: 1131990258}
-  signalObj: {fileID: 1300098234}
+  targetPlatform2: {fileID: 0}
+  signalObj1: {fileID: 0}
+  signalObj2: {fileID: 0}
   transparentMaterial: {fileID: 2100000, guid: b737e654d047176469701b5ca057fa81, type: 2}
   filledMaterial: {fileID: 2100000, guid: 7a8be95e4e7c9594b8528e2a03125f0c, type: 2}
   onMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
@@ -13394,7 +13400,9 @@ MonoBehaviour:
   obj1: {fileID: 936427467}
   obj2: {fileID: 144468921}
   targetPlatform: {fileID: 293062174}
-  signalObj: {fileID: 1069544011}
+  targetPlatform2: {fileID: 0}
+  signalObj1: {fileID: 0}
+  signalObj2: {fileID: 0}
   transparentMaterial: {fileID: 2100000, guid: b737e654d047176469701b5ca057fa81, type: 2}
   filledMaterial: {fileID: 2100000, guid: 7a8be95e4e7c9594b8528e2a03125f0c, type: 2}
   onMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
@@ -21247,7 +21255,9 @@ MonoBehaviour:
   obj1: {fileID: 0}
   obj2: {fileID: 0}
   targetPlatform: {fileID: 1131990258}
-  signalObj: {fileID: 1300098234}
+  targetPlatform2: {fileID: 0}
+  signalObj1: {fileID: 0}
+  signalObj2: {fileID: 0}
   transparentMaterial: {fileID: 2100000, guid: b737e654d047176469701b5ca057fa81, type: 2}
   filledMaterial: {fileID: 2100000, guid: 7a8be95e4e7c9594b8528e2a03125f0c, type: 2}
   onMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
@@ -23416,7 +23426,7 @@ Transform:
   m_GameObject: {fileID: 1341473967}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86.59, y: 0.6069999, z: 0.7}
+  m_LocalPosition: {x: 66.55, y: 3.8600001, z: 0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25019,7 +25029,9 @@ MonoBehaviour:
   obj1: {fileID: 156096662}
   obj2: {fileID: 1538107978}
   targetPlatform: {fileID: 1901381020}
-  signalObj: {fileID: 993413592}
+  targetPlatform2: {fileID: 0}
+  signalObj1: {fileID: 0}
+  signalObj2: {fileID: 0}
   transparentMaterial: {fileID: 2100000, guid: ffc628e1f4d28c7469042f489e6a1e8d, type: 2}
   filledMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
   onMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
@@ -26074,7 +26086,9 @@ MonoBehaviour:
   obj1: {fileID: 0}
   obj2: {fileID: 0}
   targetPlatform: {fileID: 1131990258}
-  signalObj: {fileID: 1300098234}
+  targetPlatform2: {fileID: 0}
+  signalObj1: {fileID: 0}
+  signalObj2: {fileID: 0}
   transparentMaterial: {fileID: 2100000, guid: b737e654d047176469701b5ca057fa81, type: 2}
   filledMaterial: {fileID: 2100000, guid: 7a8be95e4e7c9594b8528e2a03125f0c, type: 2}
   onMaterial: {fileID: 2100000, guid: 45f596d486b2378419dc0b985833a2c8, type: 2}
@@ -35088,7 +35102,7 @@ Transform:
   m_GameObject: {fileID: 2127965613}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15272553, y: -0.2959073, z: 0.047990125, w: 0.9417063}
-  m_LocalPosition: {x: 91.2, y: 4.277, z: -6.6}
+  m_LocalPosition: {x: 71.16, y: 7.53, z: -6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
