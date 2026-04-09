@@ -20,6 +20,7 @@ TagManager:
   - sunSpot1
   - sunSpot2
   - sunSpot3
+  - lotion
   layers:
   - Default
   - TransparentFX
