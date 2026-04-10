@@ -2433,7 +2433,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278972863}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -4348,7 +4348,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467054033}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5855,8 +5855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6300f50343246309d5f07e9fc16d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::conveyerBelt
-  speed: 9
-  direction: {x: 0, y: 0.3, z: 0}
+  speed: 8
+  direction: {x: 0, y: 0.8, z: 0}
   onBelt: []
   playerGuy: {fileID: 2071101398}
 --- !u!64 &676885171
@@ -12084,7 +12084,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795753872}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -19495,8 +19495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6300f50343246309d5f07e9fc16d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::conveyerBelt
-  speed: 6
-  direction: {x: 0, y: 0.5, z: 0}
+  speed: 8
+  direction: {x: 0, y: 0.8, z: 0}
   onBelt: []
   playerGuy: {fileID: 2071101398}
 --- !u!1001 &1069667596
@@ -33728,7 +33728,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612384734}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cadde59ff2c1e4d5b90501f805aa547b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
