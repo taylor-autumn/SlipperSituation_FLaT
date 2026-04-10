@@ -45,6 +45,11 @@ public class itemManager : MonoBehaviour
     public float fanSpeed;
     public Vector3 fanRotationAxis = Vector3.up;
 
+    [Header("animated transitions")]
+    public Animator transitioning;
+    public AudioSource audioSource;
+    public AudioClip transitionSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -194,19 +199,26 @@ public class itemManager : MonoBehaviour
             string scBathName = "Level3.2";
             if (SceneManager.GetActiveScene().name == sc2Name)
             {
-                Invoke("loadLevel3", 1f);
-                //FOR LEAH===================================
+                Invoke("loadLevel3", 1.5f);
+                //end kitchen
+                audioSource.PlayOneShot(transitionSound);
+                transitioning.SetBool("change", true);
             }
             if (SceneManager.GetActiveScene().name == scPipesName)
             {
-                Invoke("loadLevelBathroom", 1.5f);
-                //FOR LEAH===================================
+                //end of pipes
+                audioSource.PlayOneShot(transitionSound);
+                GameObject triggerchange = GameObject.Find("nextSC");
+                Destroy(triggerchange);
+                Invoke("shake", 1f);
+                Invoke("loadLevelBathroom", 3.5f);
             }
             if (SceneManager.GetActiveScene().name == scBathName)
             {
                 print("CALLING MENU");
                 Invoke("loadMenu", 1.5f);
-                //FOR LEAH===================================
+                transitioning.SetBool("change", true);
+                audioSource.PlayOneShot(transitionSound);
             }
         }
     }
@@ -264,7 +276,8 @@ public class itemManager : MonoBehaviour
             main.simulationSpeed = 1f;
             emission.rateOverTime = 50;
             Invoke("loadLevel2", 3f);
-            //FOR LEAH===================================
+            Invoke("shake", 1f);
+            mentosCounter += 1;
         }
     }
     public void loadLevel2()
@@ -275,6 +288,14 @@ public class itemManager : MonoBehaviour
     public void loadLevel3()
     {
         SceneManager.LoadScene("level3.1");
+    }
+    public void shake()
+    {
+        GameObject thePlayer = GameObject.Find("Player");
+        GameObject theMover = GameObject.Find("bottom");
+        thePlayer.transform.SetParent(theMover.transform);
+        audioSource.PlayOneShot(transitionSound);
+        transitioning.SetBool("change", true);
     }
     public void loadLevelBathroom()
     {
