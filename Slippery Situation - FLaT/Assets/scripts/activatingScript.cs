@@ -1,11 +1,9 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using Unity.VisualScripting;
-using System.Collections.Generic;
-
 public class activatingScript : MonoBehaviour
 {
+    public GameObject alerting;
     public GameObject textIcon;
     public TextMeshPro textComponent;
     public string[] lines;
@@ -26,6 +24,7 @@ public class activatingScript : MonoBehaviour
             talkingToggle = true;
             playerMoveScript = GameObject.Find("Player").GetComponent<playerMove>();
             playerMoveScript.enabled = false;
+            Destroy(alerting);
             Invoke("dialingit", 0.5f);
         }
     }
