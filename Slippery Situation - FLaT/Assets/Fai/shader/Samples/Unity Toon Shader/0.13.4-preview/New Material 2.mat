@@ -38,6 +38,7 @@ Material:
     m_Floats:
     - _Is_Filter_LightColor: 1
     - _RimLight_Power: 0.1
+    - _Tweak_SystemShadowsLevel: 0.5
     - _Use_1stAs2nd: 1
     m_Colors: []
   m_BuildTextureStacks: []
