@@ -17,7 +17,7 @@ public class menuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Equals))
         {
-            saveSystem.resetSave("taylor n leah");
+            saveSystem.resetSave("Level1");
         }
     }
     public void openAbout()
@@ -37,10 +37,10 @@ public class menuManager : MonoBehaviour
         Animator loadAnim = loadText.gameObject.GetComponent<Animator>();
 
         sceneData data = saveSystem.loadScene();
-        if (data != null && data.currentScene!="taylor n leah")
+        if (data != null && data.currentScene!="Level1")
         {
             SceneManager.LoadScene(data.currentScene);
-        }else if (data.currentScene=="taylor n leah")
+        }else if (data.currentScene=="Level1")
         {
             print("its the first one");
             loadAnim.SetTrigger("show");
@@ -58,9 +58,7 @@ public class menuManager : MonoBehaviour
 
     public void newGame()
     {
-        //saveSystem.resetSave("Level1");
-        saveSystem.resetSave("taylor n leah");
-        //SceneManager.LoadScene("Level1");
-        SceneManager.LoadScene("taylor n leah");
+        saveSystem.resetSave("Level1");
+        SceneManager.LoadScene("Level1");
     }
 }

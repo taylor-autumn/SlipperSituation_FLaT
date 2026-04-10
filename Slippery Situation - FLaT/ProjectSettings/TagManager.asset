@@ -21,6 +21,7 @@ TagManager:
   - sunSpot2
   - sunSpot3
   - lotion
+  - nextSc
   layers:
   - Default
   - TransparentFX

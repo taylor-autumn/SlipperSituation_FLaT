@@ -24,6 +24,9 @@ public class itemManager : MonoBehaviour
     [Header("Stove shit")]
     public Material stoveMaterial;
 
+    [Header("Burn Sound")]
+    public AudioSource burnSound;
+
     [Header("Soda Bubbles")]
     public int mentosCounter = 0;
     public ParticleSystem bubbles;
@@ -138,16 +141,19 @@ public class itemManager : MonoBehaviour
         {
             playerRef.groundDrag = currentDrag;
             playerRef.meltSpeed = currentMelt;
+            burnSound.Play();
         }
         if (other.gameObject.CompareTag("sunSpot2")) //sun spot
         {
             playerRef.groundDrag = currentDrag;
             playerRef.meltSpeed = intensity2;
+            burnSound.Play();
         }
         if (other.gameObject.CompareTag("sunSpot3")) //sun spot
         {
             playerRef.groundDrag = currentDrag;
             playerRef.meltSpeed = intensity3;
+            burnSound.Play();
         }
 
         if (other.gameObject.CompareTag("stove"))
@@ -181,6 +187,21 @@ public class itemManager : MonoBehaviour
             playerRef.respawn();
 
         }
+        if (other.gameObject.CompareTag("nextSc"))
+        {
+            string sc2Name = "Level2";
+            string scPipesName = "level3.1";
+            if (SceneManager.GetActiveScene().name == sc2Name)
+            {
+                Invoke("loadLevel3", 2f);
+                //FOR LEAH===================================
+            }
+            if (SceneManager.GetActiveScene().name == scPipesName)
+            {
+                Invoke("loadLevelBathroom", 2f);
+                //FOR LEAH===================================
+            }
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -189,6 +210,7 @@ public class itemManager : MonoBehaviour
         {
             playerRef.groundDrag = ogDrag;
             playerRef.meltSpeed = ogMelt;
+            burnSound.Stop();
         }
         if (other.gameObject.CompareTag("stove"))
         {
@@ -234,12 +256,22 @@ public class itemManager : MonoBehaviour
         {
             main.simulationSpeed = 1f;
             emission.rateOverTime = 50;
-            //Invoke("loadLevel2", 3f);
+            Invoke("loadLevel2", 3f);
+            //FOR LEAH===================================
         }
     }
     public void loadLevel2()
     {
         SceneManager.LoadScene("Level2");
+    }
+
+    public void loadLevel3()
+    {
+        SceneManager.LoadScene("level3.1");
+    }
+    public void loadLevelBathroom()
+    {
+        SceneManager.LoadScene("Level3.2");
     }
 
 }
