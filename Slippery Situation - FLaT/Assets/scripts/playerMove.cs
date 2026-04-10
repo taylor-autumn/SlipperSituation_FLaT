@@ -70,8 +70,8 @@ public class playerMove : MonoBehaviour
         //camerassutf
         camOffset = cameraFollow.position - transform.position;
         //other
-        deadText.gameObject.SetActive(false);
-        deathPopUp.SetActive(false);
+        if (deadText!=null) deadText.gameObject.SetActive(false);
+        if (deathPopUp !=null) deathPopUp.SetActive(false);
     }
 
     private void Update()
@@ -96,8 +96,8 @@ public class playerMove : MonoBehaviour
         //respawn shit
         if (dead)
         {
-            deadText.gameObject.SetActive(true);
-            deathPopUp.SetActive(true);
+            if (deadText!=null) deadText.gameObject.SetActive(true);
+            if (deathPopUp!=null) deathPopUp.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R))
             {
                 ultraRespawn();
@@ -186,7 +186,7 @@ public class playerMove : MonoBehaviour
         Vector3 scale = iceCube.transform.localScale;
 
         //health bar
-        meltBar.fillAmount = scale.y;
+        if (meltBar!=null) meltBar.fillAmount = scale.y;
 
         //melt function
 
@@ -242,6 +242,7 @@ public class playerMove : MonoBehaviour
     public void resetMoveableObjects()
     {
         GameObject movObjParent = GameObject.Find("moveableObjects");
+        if (movObjParent == null) print("Cant find moveable objects");
         foreach (Transform obj in movObjParent.transform)
         {
             moveableObjects objScript = obj.GetComponent<moveableObjects>();

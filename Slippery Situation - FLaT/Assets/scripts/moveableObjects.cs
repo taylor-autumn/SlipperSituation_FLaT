@@ -31,7 +31,6 @@ public class moveableObjects : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
         rb=GetComponent<Rigidbody>();
         ogObjPos = transform.localPosition;
         ogObjRot = transform.localRotation;
@@ -147,6 +146,7 @@ public class moveableObjects : MonoBehaviour
             itemManager itemRef = player.GetComponent<itemManager>();
             itemRef.mentosCounter += 1;
         }
+
     }
 
     private void OnTriggerExit(Collider other)
