@@ -169,10 +169,17 @@ public class itemManager : MonoBehaviour
             dirty = true;
         }
 
-          if (other.gameObject.CompareTag("soap"))
+        if (other.gameObject.CompareTag("soap"))
         {
             cleanering = true;
             soapParticles.SetActive(true);
+        }
+        if ((gameObject.tag == ("Player")) && (other.gameObject.CompareTag("can")))
+        {
+            print("Player in can");
+            playerMove playerRef = gameObject.GetComponent<playerMove>();
+            playerRef.respawn();
+
         }
     }
 
