@@ -199,7 +199,7 @@ public class itemManager : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == scPipesName)
             {
-                Invoke("loadLevelBathroom", 2f);
+                Invoke("loadLevelBathroom", 1.5f);
                 //FOR LEAH===================================
             }
             if (SceneManager.GetActiveScene().name == scBathName)

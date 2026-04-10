@@ -22,6 +22,8 @@ TagManager:
   - sunSpot3
   - lotion
   - nextSc
+  - hole
+  - dirtyMove
   layers:
   - Default
   - TransparentFX

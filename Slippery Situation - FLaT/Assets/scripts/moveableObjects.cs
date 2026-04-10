@@ -20,6 +20,10 @@ public class moveableObjects : MonoBehaviour
     public Material onMaterial;
     bool jam2Entered = false;
 
+    [Header("pipes shit")]
+    public int dirtyShitCount = 0;
+    public Material mudFilled;
+
     //other components
     BoxCollider obj1Col;
     BoxCollider obj2Col;
@@ -49,7 +53,6 @@ public class moveableObjects : MonoBehaviour
         if (signalObj1!=null) signalRenderer1= signalObj1.GetComponent<Renderer>();
         if (signalObj2 != null) signalRenderer2 = signalObj2.GetComponent<Renderer>();
 
-
     }
 
     // Update is called once per frame
@@ -58,6 +61,17 @@ public class moveableObjects : MonoBehaviour
         if (gameObject.transform.position.y <= deathHeight)
         {
             respawnObj();
+        }
+        if (dirtyShitCount == 1)
+        {
+            bool called = true;
+            if (called)
+            {
+                activateShitHole();
+                print("ACTIVATING ULTIMATE SHIT");
+                called = false;
+            }
+
         }
     }
 
@@ -125,6 +139,15 @@ public class moveableObjects : MonoBehaviour
         if (signalRenderer1 != null) signalRenderer1.material = transparentMaterial;
     }
 
+    public void activateShitHole()
+    {
+        if (obj2 != null)
+        {
+            obj2Col.enabled = true;
+            obj2Renderer.material = mudFilled;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (gameObject.tag == "moveObj")
@@ -145,6 +168,11 @@ public class moveableObjects : MonoBehaviour
             GameObject player = GameObject.Find("Player");
             itemManager itemRef = player.GetComponent<itemManager>();
             itemRef.mentosCounter += 1;
+        }
+        if ((gameObject.tag == ("dirtyMove")) && (other.gameObject.CompareTag("hole")))
+        {
+            print("Thing in hole");
+            dirtyShitCount += 1;
         }
 
     }
