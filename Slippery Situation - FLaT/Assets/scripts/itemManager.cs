@@ -191,14 +191,21 @@ public class itemManager : MonoBehaviour
         {
             string sc2Name = "Level2";
             string scPipesName = "level3.1";
+            string scBathName = "Level3.2";
             if (SceneManager.GetActiveScene().name == sc2Name)
             {
-                Invoke("loadLevel3", 2f);
+                Invoke("loadLevel3", 1f);
                 //FOR LEAH===================================
             }
             if (SceneManager.GetActiveScene().name == scPipesName)
             {
                 Invoke("loadLevelBathroom", 2f);
+                //FOR LEAH===================================
+            }
+            if (SceneManager.GetActiveScene().name == scBathName)
+            {
+                print("CALLING MENU");
+                Invoke("loadMenu", 1.5f);
                 //FOR LEAH===================================
             }
         }
@@ -272,6 +279,10 @@ public class itemManager : MonoBehaviour
     public void loadLevelBathroom()
     {
         SceneManager.LoadScene("Level3.2");
+    }
+    public void loadMenu()
+    {
+        SceneManager.LoadScene("menu");
     }
 
 }
